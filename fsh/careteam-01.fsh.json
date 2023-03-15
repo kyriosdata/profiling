@@ -1,0 +1,11 @@
+{
+  "resourceType": "CareTeam",
+  "id": "UnidosPelaDonaRosa",
+  "status": "proposed",
+  "name": "Unidos pela Dona Rosa",
+  "note": [
+    {
+      "text": "Equipe formada por profissionais _próximos_ da **Dona Rosa** por já terem oferecido assistência anterior."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "Altura",
+  "id": "percepcao-altura",
+  "title": "Percepção de altura pelo paciente",
+  "description": "A percepção do próprio paciente sobre sua altura",
+  "url": "http://example.org/CodeSystem/percepcao-altura",
+  "concept": [
+    {
+      "code": "muito-alto",
+      "display": "Bem acima da média",
+      "definition": "O paciente se considera muito alto"
+    },
+    {
+      "code": "alto",
+      "display": "Alto, mas próximo da média",
+      "definition": "O paciente se considera alto"
+    },
+    {
+      "code": "medio",
+      "display": "Altura média",
+      "definition": "O paciente se considera com altura normal"
+    },
+    {
+      "code": "baixo",
+      "display": "Baixo, mas próximo da média",
+      "definition": "O paciente se considera de altura baixa"
+    }
+  ],
+  "count": 4
+}
