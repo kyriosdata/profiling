@@ -1,0 +1,1 @@
+{"resourceType":"Observation","id":"Codigos","status":"registered","code":{"text":"descreva aqui o que é observado","coding":[{"system":"http://loinc.org","code":"34024-0","display":"motivo da perda do dente","userSelected":false,"version":"2.74"}]}}

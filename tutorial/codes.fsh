@@ -19,3 +19,11 @@ Description: "Apenas ilustra uso de codes"
 // por outra cujo identificador é 'pessoa'. 
 * link[0].type = #replaced-by
 * link[0].other = Reference(pessoa)
+
+// Em tempo, 'replaced-by' é um dos códigos definidos no ValueSet
+// http://hl7.org/fhir/ValueSet/link-type
+
+// Adicionalmente, um ValueSet não define os conceitos pertinentes
+// aos códigos. Estes conceitos são definidos em CodeSystems. 
+// Um ValueSet apenas indica quais os valores admitidos no elemento
+// em questão.
