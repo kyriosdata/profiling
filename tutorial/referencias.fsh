@@ -6,5 +6,8 @@ Instance: Paciente
 InstanceOf: Patient
 Usage: #example
 * contained[0] = Crer
-* generalPractitioner = Reference(Crer)
+
+// A referência pode ser para
+// Organization, Practitioner ou PractitionerRole
+* generalPractitioner[Organization] = Reference(Crer)
 
