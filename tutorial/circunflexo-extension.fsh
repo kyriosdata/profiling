@@ -3,9 +3,9 @@
 // para estender um recurso ou tipo de dados
 
 // Esta extensão registra o motivo da perda de dente
-// Neste caso, para ser incorporada a um recurso ou
+// A ser incorporada a um recurso ou
 // tipo de dados. Talvez isso seja melhor modelado 
-// como uma Observation. 
+// como uma Observation em vez de uma Extension. 
 
 Extension: MotivoPerdaDeDente
 Id: motivo-perda-de-dente
