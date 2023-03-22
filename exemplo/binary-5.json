@@ -1,0 +1,5 @@
+{
+  "resourceType": "Binary",
+  "contentType" : "image/jpeg",
+  "data" : "<segue longa sequência de caracteres na base64>"
+}
