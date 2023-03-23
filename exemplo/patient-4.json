@@ -1,0 +1,15 @@
+{
+  "identifier": [
+    {
+      "system": "https://rnds-fhir.saude.gov.br/NamingSystem/cpf",
+      "value": "12345678910"
+    }
+  ],
+  "name": [
+    {
+      "given": [ "Flávio" ]
+    }
+  ],
+  "resourceType": "Patient",
+  "id": "23"
+}
