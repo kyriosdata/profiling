@@ -1,0 +1,10 @@
+<Patient xmlns='http://hl7.org/fhir'>
+    <id value='kyz-345.23'/>
+    <identifier>
+        <system value='https://rnds-fhir.saude.gov.br/NamingSystem/cpf'/>
+        <value value='12345678910'/>
+    </identifier>
+    <name>
+        <given value='Flávio'/>
+    </name>
+</Patient>
