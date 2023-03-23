@@ -1,0 +1,17 @@
+{
+  "resourceType": "Provenance",
+  "id": "cfsb1676064379261",
+  "target": [
+    {
+      "reference": "cfsb1675535385264"
+    }
+  ],
+  "agent": [
+    {
+      "who": {
+        "reference": "cfsb1676064529369"
+      }
+    }
+  ],
+  "recorded": "2015-02-07T13:28:17.239+02:00"
+}
