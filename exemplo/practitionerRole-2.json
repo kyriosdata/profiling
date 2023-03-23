@@ -1,0 +1,12 @@
+{
+  "resourceType": "PractitionerRole",
+  "id": "cfsb1674770705166",
+  "practitioner": {
+    "reference": "cfsb1674770680355"
+  },
+  "location": [
+    {
+      "reference": "cfsb1674770034572"
+    }
+  ]
+}
