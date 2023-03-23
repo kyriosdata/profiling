@@ -1,0 +1,10 @@
+extension: [
+{
+"url": "http://www.exemplo.com/extensions/dia-contato",
+"valueCode": "mon"
+},
+{
+"url": "http://www.exemplo.com/extensions/total-tentativas",
+"valueInteger": 2
+}
+]
