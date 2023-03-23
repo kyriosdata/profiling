@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Parameters xmlns="http://hl7.org/fhir">
+    <parameter>
+        <name value="display" />
+        <valueString value="Acyclovir [Susceptibility]" />
+    </parameter>
+    <parameter>
+        <name value="system" />
+        <valueString value="http://loinc.org" />
+    </parameter>
+    <parameter>
+        <name value="code" />
+        <valueString value="1-8" />
+    </parameter>
+    <parameter>
+        <name value="version" />
+        <valueString value="2.73" />
+    </parameter>
+    <parameter>
+        <name value="result" />
+        <valueBoolean value="true" />
+    </parameter>
+</Parameters>
