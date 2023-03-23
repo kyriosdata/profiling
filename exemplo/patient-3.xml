@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient
+        xmlns="http://hl7.org/fhir">
+    <id value="cfsb1672494906234"/>
+    <name>
+        <text value="Dona Rosa"/>
+        <family value="Rosa"/>
+        <given value="Maria"/>
+    </name>
+</Patient>
