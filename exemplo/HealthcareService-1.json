@@ -1,0 +1,10 @@
+{
+  "resourceType": "HealthcareService",
+  "id": "healthcareservice01",
+  "availableTime": [
+    {
+      "availableStartTime": "08:00:00",
+      "availableEndTime": "18:00:00"
+    }
+  ]
+}
