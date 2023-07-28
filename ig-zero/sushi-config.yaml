@@ -1,0 +1,61 @@
+# Ao alterar o 'id' terá que efetuar alteração
+# correspondente no arquivo ig.ini
+
+id: instancias
+canonical: https://canonical.ufg.br
+name: InstanciasNome
+title: "Instâncias de Recursos FHIR"
+description: "Descrição do Guia de Implementação"
+status: draft
+license: CC0-1.0
+version: 0.0.1
+fhirVersion: 4.0.1
+copyrightYear: 2023+
+releaseLabel: preliminar
+jurisdiction: urn:iso:std:iso:3166#BR "Brazil"
+experimental: false
+meta:
+  lastUpdated: 2021-10-22T14:56:14Z
+language: pt-BR
+text: "Ponto de partida para elaborar Guia de Implementação."
+publisher:
+  name: Comissão de Governança de Informação em Saúde (CGIS - UFG)
+  url: https://cgis.ufg.br
+  email: kyriosdata@ufg.br
+parameters:
+  apply-publisher: true
+  apply-contact: true
+  show-inherited-invariants: false
+  active-tables: "false"
+
+pages:
+  index.md:
+    title: Principal
+  downloads.xml:
+    title: Downloads
+  requisicao.md:
+    title: Requisição
+  dominio.md:
+    title: Modelagem do domínio
+  resultado.md:
+    title: Resultado
+  processos.md:
+    title: Processos de Negócio
+  requisitos.md:
+  artifacts.html:
+    title: Artefatos
+
+menu:
+  Principal: index.html
+  Documentos:
+    Requisitos: requisitos.html
+    Processos de Negócio: processos.html
+    Domínio: dominio.html
+    Requisição: requisicao.html
+    Resultado: resultado.html
+  Artefatos: artifacts.html
+  Downloads: downloads.html
+  Outros:
+    FHIR: http://hl7.org/fhir/R4/index.html
+    Github: https://github.com/kyriosdata/profilling
+  Índice: toc.html
