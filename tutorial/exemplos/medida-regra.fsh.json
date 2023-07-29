@@ -1,0 +1,1 @@
+{"resourceType":"Measure","id":"MedidaSatisfazRegra","text":{"status":"generated","div":"<div xmlns=\"http://www.w3.org/1999/xhtml\">fake</div>"},"status":"active","group":[{"population":[{"criteria":{"language":"text/fhirpath","expression":"expressao"}}]}]}

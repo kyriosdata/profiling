@@ -33,5 +33,10 @@
     "info": "Narrativa para descrever instância.",
     "arquivo": "narrativa",
     "recurso": "Patient"
+  },
+  {
+    "info": "Regras podem exigir elementos, mesmo quando cardinalidade indica opcional.",
+    "arquivo": "medica-regra",
+    "recurso": "Measure"
   }
 ]
