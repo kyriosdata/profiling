@@ -3,7 +3,7 @@
   "id": "HC",
   "text": {
     "status": "empty",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Seu João, padeiro.</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">empty</div>"
   },
   "name": "Hospital de Clínicas da UFG",
   "partOf": {

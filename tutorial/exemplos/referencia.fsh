@@ -3,7 +3,7 @@ InstanceOf: Organization
 Usage: #example
 
 * text.status = #empty
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Seu João, padeiro.</div>"
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">empty</div>"
 
 * name = "Hospital de Clínicas da UFG"
 
