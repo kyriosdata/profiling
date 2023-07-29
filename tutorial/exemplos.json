@@ -43,5 +43,10 @@
     "info": "Faz uso de extensão predefinida do padrão FHIR.",
     "arquivo": "extensao-uso",
     "recurso": "ValueSet"
+  },
+  {
+    "info": "Ilustra emprego de índices em elementos que são vetores (arrays). Também ilustra emprego de códigos.",
+    "arquivo": "indices-arrays",
+    "recurso": "Patient"
   }
 ]

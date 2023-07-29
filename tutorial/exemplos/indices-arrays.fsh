@@ -4,6 +4,9 @@ Usage: #example
 Title: "Exemplos de índices"
 Description: "Uso de índices em arrays (vetores)"
 
+* text.status = #empty
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Seu João, padeiro.</div>"
+
 // Paciente pode ter zero ou mais (0..*) nomes associados 
 // Neste exemplo, são fornecidos 4 (quatro) nomes
 

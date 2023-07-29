@@ -9,3 +9,4 @@
 | Narrativa para descrever instância. | [fsh](exemplos/narrativa.fsh) | [json](exemplos/narrativa.fsh.json) | [Patient](https://hl7.org/fhir/r4/patient.html) |
 | Regras podem exigir elementos, mesmo quando cardinalidade indica opcional. | [fsh](exemplos/medida-regra.fsh) | [json](exemplos/medida-regra.fsh.json) | [Measure](https://hl7.org/fhir/r4/measure.html) |
 | Faz uso de extensão predefinida do padrão FHIR. | [fsh](exemplos/extensao-uso.fsh) | [json](exemplos/extensao-uso.fsh.json) | [ValueSet](https://hl7.org/fhir/r4/valueset.html) |
+| Ilustra emprego de índices em elementos que são vetores (arrays). Também ilustra emprego de códigos. | [fsh](exemplos/indices-arrays.fsh) | [json](exemplos/indices-arrays.fsh.json) | [Patient](https://hl7.org/fhir/r4/patient.html) |
