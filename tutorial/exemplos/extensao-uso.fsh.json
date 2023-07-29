@@ -1,0 +1,1 @@
+{"resourceType":"ValueSet","id":"ValueSetComExtensao","text":{"status":"empty","div":"<div xmlns=\"http://www.w3.org/1999/xhtml\">empty</div>"},"status":"draft","extension":[{"url":"http://hl7.org/fhir/StructureDefinition/valueset-extensible","valueBoolean":true}]}

@@ -7,4 +7,5 @@
 | Uso de elemento do tipo coding. | [fsh](exemplos/codings.fsh) | [json](exemplos/codings.fsh.json) | [Observation](https://hl7.org/fhir/r4/observation.html) |
 | Uso de code, coding e CodeableConcept. | [fsh](exemplos/codings-alternativo.fsh) | [json](exemplos/codings-alternativo.fsh.json) | [Observation](https://hl7.org/fhir/r4/observation.html) |
 | Narrativa para descrever instância. | [fsh](exemplos/narrativa.fsh) | [json](exemplos/narrativa.fsh.json) | [Patient](https://hl7.org/fhir/r4/patient.html) |
-| Regras podem exigir elementos, mesmo quando cardinalidade indica opcional. | [fsh](exemplos/medica-regra.fsh) | [json](exemplos/medica-regra.fsh.json) | [Measure](https://hl7.org/fhir/r4/measure.html) |
+| Regras podem exigir elementos, mesmo quando cardinalidade indica opcional. | [fsh](exemplos/medida-regra.fsh) | [json](exemplos/medida-regra.fsh.json) | [Measure](https://hl7.org/fhir/r4/measure.html) |
+| Faz uso de extensão predefinida do padrão FHIR. | [fsh](exemplos/extensao-uso.fsh) | [json](exemplos/extensao-uso.fsh.json) | [ValueSet](https://hl7.org/fhir/r4/valueset.html) |

@@ -36,7 +36,12 @@
   },
   {
     "info": "Regras podem exigir elementos, mesmo quando cardinalidade indica opcional.",
-    "arquivo": "medica-regra",
+    "arquivo": "medida-regra",
     "recurso": "Measure"
+  },
+  {
+    "info": "Faz uso de extensão predefinida do padrão FHIR.",
+    "arquivo": "extensao-uso",
+    "recurso": "ValueSet"
   }
 ]
