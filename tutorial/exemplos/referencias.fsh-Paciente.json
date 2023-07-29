@@ -1,1 +1,0 @@
-{"resourceType":"Patient","id":"Paciente","contained":[{"resourceType":"Organization","id":"Crer"}],"generalPractitioner":[{"reference":"#Crer"}]}

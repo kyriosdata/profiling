@@ -1,0 +1,12 @@
+{
+  "resourceType": "Organization",
+  "id": "HC",
+  "text": {
+    "status": "empty",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Seu João, padeiro.</div>"
+  },
+  "name": "Hospital de Clínicas da UFG",
+  "partOf": {
+    "reference": "UFG"
+  }
+}

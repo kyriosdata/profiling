@@ -48,5 +48,10 @@
     "info": "Ilustra emprego de índices em elementos que são vetores (arrays). Também ilustra emprego de códigos.",
     "arquivo": "indices-arrays",
     "recurso": "Patient"
+  },
+  {
+    "info": "Uma instância que faz referência para outra instância.",
+    "arquivo": "referencia",
+    "recurso": "Organization"
   }
 ]
