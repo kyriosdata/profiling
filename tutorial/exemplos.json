@@ -68,6 +68,6 @@
     "info": "Definição de valores de metadados para uma instância (^).",
     "arquivo": "circunflexo-elementdefinition",
     "recurso": "Patient",
-    "profile": true
+    "perfil": true
   }
 ]
