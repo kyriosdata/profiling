@@ -1,1 +1,0 @@
-{"resourceType":"ValueSet","status":"active","name":"SoAltos","id":"so-altos","title":"Apenas os que se consideram altos","description":"Pacientes que se consideram altos","url":"http://example.org/ValueSet/so-altos","compose":{"include":[{"system":"http://exemplo.org/percepcao-altura","concept":[{"code":"muito-alto"},{"code":"alto"}]}]}}

@@ -10,24 +10,29 @@
   "concept": [
     {
       "code": "muito-alto",
-      "display": "Bem acima da média",
+      "display": "muito alto",
       "definition": "O paciente se considera muito alto"
     },
     {
       "code": "alto",
-      "display": "Alto, mas próximo da média",
+      "display": "alto",
       "definition": "O paciente se considera alto"
     },
     {
       "code": "medio",
-      "display": "Altura média",
+      "display": "normal",
       "definition": "O paciente se considera com altura normal"
     },
     {
       "code": "baixo",
-      "display": "Baixo, mas próximo da média",
+      "display": "baixo",
       "definition": "O paciente se considera de altura baixa"
     }
   ],
+  "text": {
+    "status": "empty",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">empty</div>"
+  },
+  "caseSensitive": true,
   "count": 4
 }
