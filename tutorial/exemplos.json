@@ -58,5 +58,10 @@
     "info": "Uso de uma extensão formada por subextensões em uma instância.",
     "arquivo": "subextensoes-uso",
     "recurso": "DiagnosticReport"
+  },
+  {
+    "info": "Definição de conceitos em um CodeSystem.",
+    "arquivo": "percepcao-altura",
+    "recurso": "DiagnosticReport"
   }
 ]
