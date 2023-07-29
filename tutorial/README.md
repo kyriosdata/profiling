@@ -4,7 +4,7 @@
 
 #### Comentários
 
-```js
+```json
 /*
    Ilustra uso de comentários em FSH
    e duas palavras reservadas, ou especiais:
@@ -16,10 +16,10 @@
 */
 
 // Instance: fornece o identificador da instância
-Instance: PacienteComComentarios; // Identificador da instância
+Instance: PacienteComComentarios // Identificador da instância
 
 // InstanceOf: a instância é do recurso aqui identificado.
-InstanceOf: Patient; // O nome do recurso
+InstanceOf: Patient // O nome do recurso
 
 // Não se espera fazer uso de tantos comentários
 // em um arquivo em fsh. Este exemplo tem como foco,
