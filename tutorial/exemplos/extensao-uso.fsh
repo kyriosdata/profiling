@@ -1,4 +1,4 @@
-// Ilustra uso de extensão 
+// Ilustra emprego de extensão 
 // Uma extensão que faz parte da especificação do FHIR.
 // De fato, há muitas extensões predefinidas. Veja:
 // https://www.hl7.org/fhir/r4/extensibility-registry.html
