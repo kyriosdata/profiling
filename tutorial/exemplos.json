@@ -53,5 +53,10 @@
     "info": "Uma instância que faz referência para outra instância.",
     "arquivo": "referencia",
     "recurso": "Organization"
+  },
+  {
+    "info": "Uso de uma extensão formada por subextensões em uma instância.",
+    "arquivo": "subextensoes-uso",
+    "recurso": "DiagnosticReport"
   }
 ]

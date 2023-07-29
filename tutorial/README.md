@@ -11,3 +11,4 @@
 | Faz uso de extensão predefinida do padrão FHIR. | [fsh](exemplos/extensao-uso.fsh) | [json](exemplos/extensao-uso.fsh.json) | [ValueSet](https://hl7.org/fhir/r4/valueset.html) |
 | Ilustra emprego de índices em elementos que são vetores (arrays). Também ilustra emprego de códigos. | [fsh](exemplos/indices-arrays.fsh) | [json](exemplos/indices-arrays.fsh.json) | [Patient](https://hl7.org/fhir/r4/patient.html) |
 | Uma instância que faz referência para outra instância. | [fsh](exemplos/referencia.fsh) | [json](exemplos/referencia.fsh.json) | [Organization](https://hl7.org/fhir/r4/organization.html) |
+| Uso de uma extensão formada por subextensões em uma instância. | [fsh](exemplos/subextensoes-uso.fsh) | [json](exemplos/subextensoes-uso.fsh.json) | [DiagnosticReport](https://hl7.org/fhir/r4/diagnosticreport.html) |
