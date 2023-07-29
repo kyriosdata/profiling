@@ -1,40 +1,3 @@
-// Copyright 
-// A extensão abaixo foi obtida a partir da extensão 
-// produzida pelo Ministério da Saúde e disponível em
-// https://simplifier.net/redenacionaldedadosemsaude/brparentesindividuo
-
-// IMPORTANTE: 
-// várias mudanças foram realizadas para viabilizar a validação.
-// Ou seja, NÃO REFLETE O ORIGINAL.
-
-// Alias: $relacionamento = http://hl7.org/fhir/ValueSet/parent-relationship-codes
-
-// Extension: BRParentesIndividuo
-// Id: BRParentesIndividuo
-// Title: "Parentes do Indivíduo"
-// Description: "Resource para representar parentescos de indivíduo."
-
-// * ^url = "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRParentesIndividuo-1.0"
-
-// Onde a extensão pode ser utilizada?
-// Apenas no recurso Patient. Ou seja,
-// pode-se acrescentar instâncias desta
-// extensão em um Patient para registrar
-// parentesco. Conforme definido mais 
-// adiante, o parentesco pode ser 
-// estabelecido com outro paciente ou
-// apenas pela citação do nome do parente.
-
-// * ^context.type = #element
-// * ^context.expression = "Patient"
-
-// Uma extensão também pode ser estendida, 
-// ou seja, conter subextensões, conforme
-// https://www.hl7.org/fhir/r4/extension-diagnosticreport-geneticsanalysis.html
-
-// Neste exemplo, as subextensões "type" e "interpretation"
-// são do tipo CodeableConcept.
-
 Instance: RelatorioDiagnostico
 InstanceOf: DiagnosticReport
 Usage: #example
@@ -61,3 +24,8 @@ Usage: #example
 * extension[0].extension[1].url = "interpretation"
 * extension[0].extension[1].valueCodeableConcept.text = "interpretação"
 
+// Por fim, o contexto de uso desta extensão é um DiagnosticReport.
+// Ou seja, esta extensão não pode ser inserida em uma instância de
+// Patient, por exemplo, ou outra que não seja DiagnosticReport. 
+// Quando se cria uma extensão é dito onde é esperado o seu uso,
+// neste caso, apenas DiagnosticReport.
