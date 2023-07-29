@@ -1,16 +1,19 @@
 // Ilustra uso de circunflexo (^, "caret") em FSH
 // Em particular, em ElementDefinition of StructureDefinition
 
-// Pacientes que falam apenas português
+// Perfil para pacientes que falam apenas português
+
 Profile: PacienteLinguaPortuguesa
 Parent: Patient
-Id: circunflexo-element-definition
+Id: paciente-fala-portugues
 
-Title: "Paciente que fala apenas português"
+Title: "Paciente que fala português"
 Description: "Pacientes de língua portuguesa"
 
 // Restringe a língua ao português do Brasil.
-// O código pt-br é obtido do CodeSystem urn:ietf:bcp:47 (oid)
+// O código pt-br é obtido do CodeSystem 
+// identificado pelo oid "urn:ietf:bcp:47"
+
 * communication.language = urn:ietf:bcp:47#pt-br
 
 // Para detalhar brevemente este elemento usa-se 

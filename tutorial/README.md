@@ -13,3 +13,4 @@
 | Uma instância que faz referência para outra instância. | [fsh](exemplos/referencia.fsh) | [json](exemplos/referencia.fsh.json) | [Organization](https://hl7.org/fhir/r4/organization.html) |
 | Uso de uma extensão formada por subextensões em uma instância. | [fsh](exemplos/subextensoes-uso.fsh) | [json](exemplos/subextensoes-uso.fsh.json) | [DiagnosticReport](https://hl7.org/fhir/r4/diagnosticreport.html) |
 | Definição de conceitos em um CodeSystem. | [fsh](exemplos/percepcao-altura.fsh) | [json](exemplos/percepcao-altura.fsh.json) | [DiagnosticReport](https://hl7.org/fhir/r4/diagnosticreport.html) |
+| Definição de valores de metadados para uma instância (^). | [fsh](exemplos/circunflexo-elementdefinition.fsh) | [json](exemplos/circunflexo-elementdefinition.fsh.json) | [Patient](https://hl7.org/fhir/r4/patient.html) |

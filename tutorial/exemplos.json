@@ -63,5 +63,11 @@
     "info": "Definição de conceitos em um CodeSystem.",
     "arquivo": "percepcao-altura",
     "recurso": "DiagnosticReport"
+  },
+  {
+    "info": "Definição de valores de metadados para uma instância (^).",
+    "arquivo": "circunflexo-elementdefinition",
+    "recurso": "Patient",
+    "profile": true
   }
 ]
