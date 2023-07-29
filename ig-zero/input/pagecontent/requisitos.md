@@ -5,4 +5,8 @@ Clique em
 
 Conjunto de instâncias que permitem ambientação
 básica com FHIR Shorthand (FSH) e a estrutura dos
-recursos FHIR.
+recursos FHIR. Cada um dos exemplos segue comentado abaixo.
+
+### ActivityDefinition
+
+<a href="examples/example-activity-definition-coleta.fsh">FSH</a>
