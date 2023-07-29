@@ -5,7 +5,8 @@
 
    Há dois tipos de comentários, este,
    que se estende por mais de uma linha
-   e aquele iniciado por //.
+   e aquele iniciado por // 
+   até o final da linha.
 */
 
 // Instance: fornece o identificador da instância
