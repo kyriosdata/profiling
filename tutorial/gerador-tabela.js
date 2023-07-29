@@ -15,6 +15,10 @@ function linkToFsh(fsh) {
   return "[fsh](exemplos/" + fsh + ".fsh)";
 }
 
+function indicaPerfil(perfil) {
+  return perfil ? " (perfil)" : "";
+}
+
 fs.readFile(nomeDoArquivo, "utf8", (err, data) => {
   if (err) {
     console.error("Erro ao ler o arquivo:", err);
@@ -34,7 +38,7 @@ fs.readFile(nomeDoArquivo, "utf8", (err, data) => {
       "|",
       linkToJson(exemplo.arquivo),
       "|",
-      linkToResource(exemplo.recurso),
+      linkToResource(exemplo.recurso) + indicaPerfil(exemplo.perfil),
       "|"
     );
   });
