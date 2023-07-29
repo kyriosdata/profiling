@@ -4,7 +4,7 @@
 
 #### Comentários
 
-```json
+```
 /*
    Ilustra uso de comentários em FSH
    e duas palavras reservadas, ou especiais:
