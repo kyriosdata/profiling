@@ -14,3 +14,4 @@
 | Uso de uma extensão formada por subextensões em uma instância. | [fsh](exemplos/subextensoes-uso.fsh) | [json](exemplos/subextensoes-uso.fsh.json) | [DiagnosticReport](https://hl7.org/fhir/r4/diagnosticreport.html) |
 | Definição de conceitos em um CodeSystem. | [fsh](exemplos/percepcao-altura.fsh) | [json](exemplos/percepcao-altura.fsh.json) | [DiagnosticReport](https://hl7.org/fhir/r4/diagnosticreport.html) |
 | Definição de valores de metadados para uma instância (^). | [fsh](exemplos/circunflexo-elementdefinition.fsh) | [json](exemplos/circunflexo-elementdefinition.fsh.json) | [Patient](https://hl7.org/fhir/r4/patient.html) (perfil) |
+| Definição de uma extensão. | [fsh](exemplos/circunflexo-extension.fsh) | [json](exemplos/circunflexo-extension.fsh.json) | [Extension](https://hl7.org/fhir/r4/extension.html) |

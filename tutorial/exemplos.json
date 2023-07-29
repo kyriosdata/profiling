@@ -69,5 +69,10 @@
     "arquivo": "circunflexo-elementdefinition",
     "recurso": "Patient",
     "perfil": true
+  },
+  {
+    "info": "Definição de uma extensão.",
+    "arquivo": "circunflexo-extension",
+    "recurso": "Extension"
   }
 ]
