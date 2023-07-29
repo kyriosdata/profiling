@@ -1,0 +1,36 @@
+{
+  "resourceType": "DiagnosticReport",
+  "id": "RelatorioDiagnostico",
+  "text": {
+    "status": "empty",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">empty</div>"
+  },
+  "status": "partial",
+  "code": {
+    "coding": [
+      {
+        "code": "code",
+        "system": "http://hl7.org/fhir/concept-property-type"
+      }
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/DiagnosticReport-geneticsAnalysis",
+      "extension": [
+        {
+          "url": "type",
+          "valueCodeableConcept": {
+            "text": "tipo"
+          }
+        },
+        {
+          "url": "interpretation",
+          "valueCodeableConcept": {
+            "text": "interpretação"
+          }
+        }
+      ]
+    }
+  ]
+}

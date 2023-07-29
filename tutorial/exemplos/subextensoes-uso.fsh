@@ -7,14 +7,14 @@
 // várias mudanças foram realizadas para viabilizar a validação.
 // Ou seja, NÃO REFLETE O ORIGINAL.
 
-Alias: $relacionamento = http://hl7.org/fhir/ValueSet/parent-relationship-codes
+// Alias: $relacionamento = http://hl7.org/fhir/ValueSet/parent-relationship-codes
 
-Extension: BRParentesIndividuo
-Id: BRParentesIndividuo
-Title: "Parentes do Indivíduo"
-Description: "Resource para representar parentescos de indivíduo."
+// Extension: BRParentesIndividuo
+// Id: BRParentesIndividuo
+// Title: "Parentes do Indivíduo"
+// Description: "Resource para representar parentescos de indivíduo."
 
-* ^url = "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRParentesIndividuo-1.0"
+// * ^url = "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRParentesIndividuo-1.0"
 
 // Onde a extensão pode ser utilizada?
 // Apenas no recurso Patient. Ou seja,
@@ -25,33 +25,39 @@ Description: "Resource para representar parentescos de indivíduo."
 // estabelecido com outro paciente ou
 // apenas pela citação do nome do parente.
 
-* ^context.type = #element
-* ^context.expression = "Patient"
+// * ^context.type = #element
+// * ^context.expression = "Patient"
 
-// Uma extensão também pode ser estendida.
-// Quando estendida, não pode possuir value[x].
-// Neste exemplo, portanto, os dois elementos empregados
-// na definição desta extensão são "url" e "extension". 
+// Uma extensão também pode ser estendida, 
+// ou seja, conter subextensões, conforme
+// https://www.hl7.org/fhir/r4/extension-diagnosticreport-geneticsanalysis.html
 
-// URL 
-// Definida acima ^url
+// Neste exemplo, as subextensões "type" e "interpretation"
+// são do tipo CodeableConcept.
 
-// Esta extensão reúne dois itens de dados:
-// (a) relação e (b) parente.
-* extension contains
-    relacao 1..1 and
-    parente 1..1
+Instance: RelatorioDiagnostico
+InstanceOf: DiagnosticReport
+Usage: #example
 
-// Definição da extensão denominada "relacao".
-// É obrigatória e o código estabelece a relação
-// do paciente em questão com o parente.
-* extension[relacao].value[x] 1..
-* extension[relacao].value[x] only code
-* extension[relacao].value[x] from $relacionamento (required)
+* text.status = #empty
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">empty</div>"
 
-// Definição da extensão denominada "parente"
-// É obrigatório indicar o parente, seja pelo
-// simples nome ou por referência ao Patient 
-// correspondente.
-* extension[parente].value[x] 1..
-* extension[parente].value[x] only HumanName or Reference(Patient)
+* status = #partial
+
+// Código errado, inadequado, mas suficiente para ilustrar
+// sem fazer uso de terminologia como LOINC, que seria o
+// indicado, contudo, exigiria serviço de terminologia
+// devidamente configurado para validação.
+* code = http://hl7.org/fhir/concept-property-type#code
+
+// Abaixo segue o uso de uma única extensão acrescentada
+// ao relatório, contudo, esta extensão faz uso de duas
+// subextensões. A extensão é predefinida pelo padrão FHIR.
+// Adicionalmente, não faz uso de valores reais.
+
+* extension[0].url = "http://hl7.org/fhir/StructureDefinition/DiagnosticReport-geneticsAnalysis"
+* extension[0].extension[0].url = "type"
+* extension[0].extension[0].valueCodeableConcept.text = "tipo"
+* extension[0].extension[1].url = "interpretation"
+* extension[0].extension[1].valueCodeableConcept.text = "interpretação"
+
