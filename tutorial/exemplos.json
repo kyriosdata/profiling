@@ -1,0 +1,37 @@
+[
+  {
+    "info": "Comentários são amplamente empregados nestes exemplos para documentar o conteúdo em FHIR Shorthand.",
+    "arquivo": "comentarios",
+    "recurso": "Patient"
+  },
+  {
+    "info": "Mínimo. Instância mínima de Patient, nenhum valor é fornecido.",
+    "arquivo": "minimo",
+    "recurso": "Patient"
+  },
+  {
+    "info": "Massa de um indivíduo.",
+    "arquivo": "massa",
+    "recurso": "Observation"
+  },
+  {
+    "info": "Uso de elemento do tipo code.",
+    "arquivo": "codes",
+    "recurso": "Patient"
+  },
+  {
+    "info": "Uso de elemento do tipo coding.",
+    "arquivo": "codings",
+    "recurso": "Observation"
+  },
+  {
+    "info": "Uso de code, coding e CodeableConcept.",
+    "arquivo": "codings-alternativo",
+    "recurso": "Observation"
+  },
+  {
+    "info": "Narrativa para descrever instância.",
+    "arquivo": "narrativa",
+    "recurso": "Patient"
+  }
+]

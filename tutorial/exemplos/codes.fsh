@@ -25,5 +25,5 @@ Description: "Apenas ilustra uso de codes"
 
 // Adicionalmente, um ValueSet não define os conceitos pertinentes
 // aos códigos. Estes conceitos são definidos em CodeSystems. 
-// Um ValueSet apenas indica quais os valores admitidos no elemento
+// Um ValueSet apenas indica quais os valores são admitidos no elemento
 // em questão.

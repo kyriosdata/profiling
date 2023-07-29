@@ -5,7 +5,7 @@ Instance: Massa
 InstanceOf: Observation
 Usage: #example
 Title: "Medida de massa corpórea (body weight)"
-Description: "O peso (massa) do paciente"
+Description: "A massa do paciente"
 
 // status é obrigatório
 // ValueSet (http://hl7.org/fhir/ValueSet/observation-status)

@@ -1,34 +1,8 @@
-## FHIR Shorthand (exemplos comentados)
-
-1. Comentários ([FSH](exemplos/comentarios.fsh) => [JSON](exemplos/comentarios.fsh.json))
-
-#### Comentários
-
-```
-/*
-   Ilustra uso de comentários em FSH
-   e duas palavras reservadas, ou especiais:
-   "Instance" e "InstanceOf".
-
-   Há dois tipos de comentários, este,
-   que se estende por mais de uma linha
-   e aquele iniciado por //
-   até o final da linha.
-*/
-
-// Instance: fornece o identificador da instância
-Instance: PacienteComComentarios // Identificador da instância
-
-// InstanceOf: a instância é do recurso aqui identificado.
-InstanceOf: Patient // O nome do recurso
-
-// Não se espera fazer uso de tantos comentários
-// em um arquivo em fsh. Este exemplo tem como foco,
-// convém ressaltar, ilustrar como comentários podem
-// ser fornecidos em FSH.
-
-// IMPORTANTE: todos estes comentários serão removidos
-// da versão correspondente em JSON, por exemplo, pois
-// este formato não admite comentários. Comentários são
-// úteis para seres humanos.
-```
+| Exemplo                                                                                             |                   FSH                   |                     JSON                      |                          FHIR                           |
+| --------------------------------------------------------------------------------------------------- | :-------------------------------------: | :-------------------------------------------: | :-----------------------------------------------------: |
+| Comentários são amplamente empregados nestes exemplos para documentar o conteúdo em FHIR Shorthand. |     [fsh](exemplos/comentarios.fsh)     |     [json](exemplos/comentarios.fsh.json)     |     [Patient](https://hl7.org/fhir/r4/patient.html)     |
+| Mínimo. Instância mínima de Patient, nenhum valor é fornecido.                                      |       [fsh](exemplos/minimo.fsh)        |       [json](exemplos/minimo.fsh.json)        |     [Patient](https://hl7.org/fhir/r4/patient.html)     |
+| Massa de um indivíduo.                                                                              |        [fsh](exemplos/massa.fsh)        |        [json](exemplos/massa.fsh.json)        | [Observation](https://hl7.org/fhir/r4/observation.html) |
+| Uso de elemento do tipo code.                                                                       |        [fsh](exemplos/codes.fsh)        |        [json](exemplos/codes.fsh.json)        |     [Patient](https://hl7.org/fhir/r4/patient.html)     |
+| Uso de elemento do tipo coding.                                                                     |       [fsh](exemplos/codings.fsh)       |       [json](exemplos/codings.fsh.json)       | [Observation](https://hl7.org/fhir/r4/observation.html) |
+| Uso de code, coding e CodeableConcept.                                                              | [fsh](exemplos/codings-alternativo.fsh) | [json](exemplos/codings-alternativo.fsh.json) | [Observation](https://hl7.org/fhir/r4/observation.html) |
