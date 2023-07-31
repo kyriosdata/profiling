@@ -26,3 +26,4 @@ Description: "Exemplo de code/Coding/CodeableConcept"
 // Sentença abaixo ilustra (opções)
 // Resultado da observação: "cárie"
 * valueCodeableConcept = $loinc#LA8948-7
+
