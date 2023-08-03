@@ -6,6 +6,7 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">empty</div>"
   },
   "status": "draft",
+  "url": "http://example.com/vs/ValueSetComExtensao",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/valueset-extensible",

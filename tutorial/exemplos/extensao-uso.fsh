@@ -11,6 +11,7 @@ Usage: #example
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">empty</div>"
 
 * status = #draft
+* url = "http://example.com/vs/ValueSetComExtensao"
 
 * extension[0].url = "http://hl7.org/fhir/StructureDefinition/valueset-extensible"
 * extension[0].valueBoolean = true
