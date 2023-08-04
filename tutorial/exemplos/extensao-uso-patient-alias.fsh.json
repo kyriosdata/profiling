@@ -1,0 +1,10 @@
+{
+  "resourceType": "Patient",
+  "id": "PacienteNaoConheceMotivoUsaAlias",
+  "extension": [
+    {
+      "url": "http://example.org/ConheceMotivoPerdaDente",
+      "valueBoolean": false
+    }
+  ]
+}
