@@ -1,15 +1,15 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "conhece-motivo-perda-de-dente",
+  "id": "extension-feliz",
   "text": {
     "status": "empty",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">empty</div>"
   },
-  "url": "http://example.org/ConheceMotivoPerdaDente",
-  "name": "ConheceMotivoPerdaDente",
-  "title": "Sabe o motivo da perda de dente",
+  "url": "http://example.org/StructureDefinition/Feliz",
+  "name": "Feliz",
+  "title": "Indica estado de felicidade do paciente",
   "status": "active",
-  "description": "Informa se o motivo da perda de dente é conhecida",
+  "description": "Informa se o paciente está feliz",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -34,8 +34,8 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Sabe o motivo da perda de dente",
-        "definition": "Informa se o motivo da perda de dente é conhecida"
+        "short": "Indica estado de felicidade do paciente",
+        "definition": "Informa se o paciente está feliz"
       },
       {
         "id": "Extension.extension",
@@ -45,7 +45,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://example.org/ConheceMotivoPerdaDente"
+        "fixedUri": "http://example.org/StructureDefinition/Feliz"
       },
       {
         "id": "Extension.value[x]",

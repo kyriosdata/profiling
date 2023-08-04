@@ -15,6 +15,8 @@ Description: "Informa se o motivo da perda de dente é conhecida"
 * ^text.status = #empty
 * ^text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>empty</div>"
 
+* ^url = "http://example.org/ConheceMotivoPerdaDente"
+
 // Qual o valor a ser fornecido para esta extensão?
 // Neste caso é estabelecido que se trata de um code
 * value[x] only boolean
