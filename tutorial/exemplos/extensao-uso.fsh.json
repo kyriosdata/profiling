@@ -1,12 +1,15 @@
 {
   "resourceType": "ValueSet",
-  "id": "ValueSetComExtensao",
+  "status": "draft",
+  "name": "ValueSetComExtensao",
+  "id": "valueset-com-extensao",
+  "title": "ValueSet com uma extensão",
+  "description": "Ilustra um ValueSet que faz uso de extension",
+  "url": "http://testando.com/vs/valueset-com-extensao",
   "text": {
     "status": "empty",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">empty</div>"
   },
-  "status": "draft",
-  "url": "http://example.com/vs/ValueSetComExtensao",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/valueset-extensible",

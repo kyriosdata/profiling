@@ -1,0 +1,103 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "nome-fantasia",
+  "url": "http://example.org/NomeFantasia",
+  "name": "NomeFantasia",
+  "status": "active",
+  "description": "Ilustra extensão contendo subextensões para \r\nregistro de nome de fantasia e a quantidade de caracteres \r\ndo nome. Usado apenas em Organization",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Organization"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "definition": "Ilustra extensão contendo subextensões para \r\nregistro de nome de fantasia e a quantidade de caracteres \r\ndo nome. Usado apenas em Organization"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:nomeFantasia",
+        "path": "Extension.extension",
+        "sliceName": "nomeFantasia",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:nomeFantasia.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:nomeFantasia.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "nomeFantasia"
+      },
+      {
+        "id": "Extension.extension:nomeFantasia.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:numeroCaracteres",
+        "path": "Extension.extension",
+        "sliceName": "numeroCaracteres",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:numeroCaracteres.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:numeroCaracteres.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "numeroCaracteres"
+      },
+      {
+        "id": "Extension.extension:numeroCaracteres.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "positiveInt"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://example.org/NomeFantasia"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

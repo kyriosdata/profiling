@@ -1,7 +1,7 @@
 // Definição de conceitos em um CodeSystem
 
 CodeSystem: Altura
-Id: percepcao-altura
+Id: altura
 Title: "Percepção de altura pelo paciente"
 Description: "A percepção do próprio paciente sobre sua altura"
 
@@ -15,6 +15,8 @@ Description: "A percepção do próprio paciente sobre sua altura"
 * ^text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">empty</div>"
 
 * ^caseSensitive = true
+
+* ^url = "http://testando.org/cs/altura"
 
 // Definição dos conceitos segue o padrão
 // #codigo "texto curto (exibição)" "texto com a definição"

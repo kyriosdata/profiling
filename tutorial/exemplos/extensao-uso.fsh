@@ -3,15 +3,17 @@
 // De fato, há muitas extensões predefinidas. Veja:
 // https://www.hl7.org/fhir/r4/extensibility-registry.html
 
-Instance: ValueSetComExtensao
-InstanceOf: ValueSet
-Usage: #example
+ValueSet: ValueSetComExtensao
+Id: valueset-com-extensao
+Title: "ValueSet com uma extensão"
+Description: "Ilustra um ValueSet que faz uso de extension"
 
-* text.status = #empty
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">empty</div>"
+* ^text.status = #empty
+* ^text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">empty</div>"
 
-* status = #draft
-* url = "http://example.com/vs/ValueSetComExtensao"
+* ^url = "http://testando.com/vs/valueset-com-extensao"
 
-* extension[0].url = "http://hl7.org/fhir/StructureDefinition/valueset-extensible"
-* extension[0].valueBoolean = true
+* ^status = #draft
+
+* ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/valueset-extensible"
+* ^extension[0].valueBoolean = true

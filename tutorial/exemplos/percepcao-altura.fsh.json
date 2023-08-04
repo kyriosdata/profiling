@@ -3,10 +3,10 @@
   "status": "active",
   "content": "complete",
   "name": "Altura",
-  "id": "percepcao-altura",
+  "id": "altura",
   "title": "Percepção de altura pelo paciente",
   "description": "A percepção do próprio paciente sobre sua altura",
-  "url": "http://example.org/CodeSystem/percepcao-altura",
+  "url": "http://testando.org/cs/altura",
   "concept": [
     {
       "code": "muito-alto",
