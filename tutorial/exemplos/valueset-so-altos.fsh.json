@@ -1,0 +1,26 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "SoAltos",
+  "id": "so-altos",
+  "title": "Apenas altos",
+  "description": "Apenas os valores para acima da média de altura",
+  "url": "http://example.org/so-altos",
+  "compose": {
+    "include": [
+      {
+        "system": "http://testando.org/cs/altura",
+        "concept": [
+          {
+            "code": "muito-alto",
+            "display": "bem alto"
+          },
+          {
+            "code": "alto",
+            "display": "apenas alto"
+          }
+        ]
+      }
+    ]
+  }
+}
