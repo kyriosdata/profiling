@@ -1,0 +1,61 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "conhece-motivo-perda-dente",
+  "text": {
+    "status": "empty",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">empty</div>"
+  },
+  "url": "http://example.org/ConheceMotivoPerdaDente",
+  "name": "ConheceMotivoPerdaDente",
+  "title": "Conhece o motivo da perda de dente",
+  "status": "active",
+  "description": "Informa se o paciente sabe por que perdeu o dente",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Patient"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Conhece o motivo da perda de dente",
+        "definition": "Informa se o paciente sabe por que perdeu o dente"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://example.org/ConheceMotivoPerdaDente"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,1 +1,18 @@
-{"resourceType":"Observation","id":"Massa","status":"registered","code":{"coding":[{"system":"http://loinc.org","code":"29463-7"}]},"valueQuantity":{"value":90,"code":"kg","system":"http://unitsofmeasure.org","unit":"peso"}}
+{
+  "resourceType": "Observation",
+  "id": "Massa",
+  "status": "registered",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "29463-7"
+      }
+    ]
+  },
+  "valueQuantity": {
+    "value": 90,
+    "code": "kg",
+    "system": "http://unitsofmeasure.org"
+  }
+}

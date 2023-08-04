@@ -2,5 +2,12 @@
   "resourceType": "Patient",
   "id": "PacienteCodigos",
   "gender": "male",
-  "link": [{ "type": "replaced-by", "other": { "reference": "pessoa" } }]
+  "link": [
+    {
+      "type": "replaced-by",
+      "other": {
+        "reference": "pessoa"
+      }
+    }
+  ]
 }

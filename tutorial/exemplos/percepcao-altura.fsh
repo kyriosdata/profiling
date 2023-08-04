@@ -1,4 +1,4 @@
-// Definição de conceitos em um CodeSystem
+// Definição de conceitos (CodeSystem)
 
 CodeSystem: Altura
 Id: altura

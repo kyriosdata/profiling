@@ -1,10 +1,16 @@
 {
-  "resourceType": "Patient",
+  "resourceType": "Organization",
   "id": "HC",
   "extension": [
     {
       "url": "http://example.org/NomeFantasia",
-      "valueString": "Hospital da UFG"
+      "extension": [
+        {
+          "url": "nomeFantasia",
+          "valueString": "Hospital da UFG"
+        }
+      ]
     }
-  ]
+  ],
+  "name": "Hospital de Clínicas"
 }

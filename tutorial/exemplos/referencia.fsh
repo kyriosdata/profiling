@@ -1,3 +1,6 @@
+// Uma organização com referência
+// para outra da qual é parte.
+
 Instance: HC
 InstanceOf: Organization
 Usage: #example
