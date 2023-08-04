@@ -6,9 +6,9 @@ InstanceOf: NamingSystem
 
 * name = "ProtocoloSiscan"
 
+
 * status = #active
 * kind = #identifier
-
 
 * date = "2023-07-31T14:24:34.711Z"
 

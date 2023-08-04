@@ -9,8 +9,8 @@
   "code": {
     "coding": [
       {
-        "code": "code",
-        "system": "http://hl7.org/fhir/concept-property-type"
+        "system": "http://loinc.org",
+        "code": "1-8"
       }
     ]
   },

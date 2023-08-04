@@ -11,7 +11,8 @@ Usage: #example
 // sem fazer uso de terminologia como LOINC, que seria o
 // indicado, contudo, exigiria serviço de terminologia
 // devidamente configurado para validação.
-* code = http://hl7.org/fhir/concept-property-type#code
+* code.coding.system = "http://loinc.org"
+* code.coding.code = #1-8
 
 // Abaixo segue o uso de uma única extensão acrescentada
 // ao relatório, contudo, esta extensão faz uso de duas
