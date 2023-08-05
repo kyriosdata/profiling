@@ -1,0 +1,10 @@
+{
+  "resourceType": "Patient",
+  "id": "UmaMulher",
+  "meta": {
+    "profile": [
+      "http://tipo.com/SoMulher"
+    ]
+  },
+  "gender": "female"
+}
