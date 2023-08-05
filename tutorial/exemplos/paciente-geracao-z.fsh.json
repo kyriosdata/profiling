@@ -1,0 +1,10 @@
+{
+  "resourceType": "Patient",
+  "id": "PacienteGeracaoZ",
+  "meta": {
+    "profile": [
+      "http://tipo.com/GeracaoZ"
+    ]
+  },
+  "birthDate": "2009-12-31"
+}

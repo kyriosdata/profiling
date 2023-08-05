@@ -1,0 +1,58 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "geracao-z",
+  "url": "http://tipo.com/GeracaoZ",
+  "version": "1.0.0",
+  "name": "GeracaoZ",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "cda",
+      "uri": "http://hl7.org/v3/cda",
+      "name": "CDA (R2)"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "loinc",
+      "uri": "http://loinc.org",
+      "name": "LOINC code for the element"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Patient",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Patient",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Patient.birthDate",
+        "path": "Patient.birthDate",
+        "constraint": [
+          {
+            "key": "date-invariant",
+            "severity": "warning",
+            "human": "Entre 1995 e 2010 (geração Z)",
+            "expression": "($this.toString().substring(0, 4) > '1995' and $this.toString().substring(0, 4) < '2010')",
+            "source": "http://tipo.com/GeracaoZ"
+          }
+        ]
+      }
+    ]
+  }
+}
