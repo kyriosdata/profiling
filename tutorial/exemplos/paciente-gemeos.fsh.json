@@ -1,0 +1,10 @@
+{
+  "resourceType": "Patient",
+  "id": "Gemeos",
+  "meta": {
+    "profile": [
+      "http://tipo.com/Gemeos"
+    ]
+  },
+  "multipleBirthBoolean": true
+}

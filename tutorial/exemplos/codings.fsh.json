@@ -8,7 +8,6 @@
       {
         "system": "http://loinc.org",
         "code": "34024-0",
-        "display": "motivo da perda do dente",
         "userSelected": false,
         "version": "2.74"
       }

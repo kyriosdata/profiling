@@ -23,6 +23,5 @@ Description: "Exemplo de code/Coding/CodeableConcept"
 // O código pode ser fornecido entre aspas (conforme acima)
 // Aspas obrigatórias se o código inclui espaço em branco
 
-* code.coding.display = "motivo da perda do dente"
 * code.coding.userSelected = false
 * code.coding.version = "2.74"

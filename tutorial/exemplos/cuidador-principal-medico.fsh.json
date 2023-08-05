@@ -1,0 +1,14 @@
+{
+  "resourceType": "Patient",
+  "id": "CuidadorPrincipalMedico",
+  "meta": {
+    "profile": [
+      "http://tipo.com/MedicoPrincipal"
+    ]
+  },
+  "generalPractitioner": [
+    {
+      "reference": "Organization/x"
+    }
+  ]
+}
