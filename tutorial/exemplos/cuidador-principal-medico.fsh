@@ -3,4 +3,4 @@ InstanceOf: Patient
 
 * meta.profile = "http://tipo.com/MedicoPrincipal"
 
-* generalPractitioner = Reference(Organization/x)
+* generalPractitioner = Reference(medico)

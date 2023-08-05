@@ -1,0 +1,28 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "EstadoCivil",
+  "id": "estado-civil",
+  "url": "http://tipo.com/EstadoCivil",
+  "concept": [
+    {
+      "code": "C",
+      "display": "Casado"
+    },
+    {
+      "code": "S",
+      "display": "Solteiro"
+    },
+    {
+      "code": "U",
+      "display": "União estável"
+    },
+    {
+      "code": "D",
+      "display": "Divorciado"
+    }
+  ],
+  "caseSensitive": true,
+  "count": 4
+}

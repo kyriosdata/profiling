@@ -1,0 +1,17 @@
+{
+  "resourceType": "Patient",
+  "id": "PacienteUniaoEstavel",
+  "meta": {
+    "profile": [
+      "http://perfil.com/EstadoCivil"
+    ]
+  },
+  "maritalStatus": {
+    "coding": [
+      {
+        "code": "U",
+        "system": "http://tipo.com/EstadoCivil"
+      }
+    ]
+  }
+}
