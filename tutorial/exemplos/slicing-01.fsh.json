@@ -1,0 +1,86 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "paciente-com-cnh",
+  "url": "http://slicing.com/paciente-com-cnh",
+  "name": "TemCNH",
+  "title": "Paciente com CNH",
+  "status": "active",
+  "description": "Todo paciente é motorista",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "cda",
+      "uri": "http://hl7.org/v3/cda",
+      "name": "CDA (R2)"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "loinc",
+      "uri": "http://loinc.org",
+      "name": "LOINC code for the element"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Patient",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Patient",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Patient.identifier",
+        "path": "Patient.identifier",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "type"
+            }
+          ],
+          "rules": "open",
+          "description": "Baseado em identifier.type"
+        },
+        "min": 1
+      },
+      {
+        "id": "Patient.identifier:cnh",
+        "path": "Patient.identifier",
+        "sliceName": "cnh",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Patient.identifier:cnh.type",
+        "path": "Patient.identifier.type",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "DL",
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Patient.identifier:cnh.value",
+        "path": "Patient.identifier.value",
+        "min": 1
+      }
+    ]
+  }
+}

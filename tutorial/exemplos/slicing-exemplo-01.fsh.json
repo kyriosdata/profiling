@@ -1,0 +1,22 @@
+{
+  "resourceType": "Patient",
+  "id": "PacienteComCnh",
+  "meta": {
+    "profile": [
+      "http://slicing.com/paciente-com-cnh"
+    ]
+  },
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "DL",
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+          }
+        ]
+      },
+      "value": "numero"
+    }
+  ]
+}
