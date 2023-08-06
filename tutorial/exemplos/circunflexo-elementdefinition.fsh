@@ -6,9 +6,10 @@
 Profile: PacienteLinguaPortuguesa
 Parent: Patient
 Id: paciente-fala-portugues
-
 Title: "Paciente que fala português"
 Description: "Pacientes de língua portuguesa"
+
+* ^url = "http://fsh.com/perfil/paciente-fala-portugues"
 
 // Restringe a língua ao português do Brasil.
 // O código pt-br é obtido do CodeSystem 
