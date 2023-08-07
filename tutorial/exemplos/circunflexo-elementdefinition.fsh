@@ -11,6 +11,8 @@ Description: "Pacientes de língua portuguesa"
 
 * ^url = "http://fsh.com/perfil/paciente-fala-portugues"
 
+* ^status = #active
+
 // Restringe a língua ao português do Brasil.
 // O código pt-br é obtido do CodeSystem 
 // identificado pelo oid "urn:ietf:bcp:47"
