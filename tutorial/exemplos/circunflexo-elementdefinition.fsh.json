@@ -1,10 +1,9 @@
 {
   "resourceType": "StructureDefinition",
   "id": "paciente-fala-portugues",
-  "url": "http://example.org/StructureDefinition/paciente-fala-portugues",
+  "url": "http://fsh.com/perfil/paciente-fala-portugues",
   "name": "PacienteLinguaPortuguesa",
   "title": "Paciente que fala português",
-  "status": "active",
   "description": "Pacientes de língua portuguesa",
   "fhirVersion": "4.0.1",
   "mapping": [
