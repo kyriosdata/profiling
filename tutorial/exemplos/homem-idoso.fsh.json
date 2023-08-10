@@ -1,0 +1,11 @@
+{
+  "resourceType": "Patient",
+  "id": "HomemAcima60Anos",
+  "meta": {
+    "profile": [
+      "http://tipo.com/HomemIdoso"
+    ]
+  },
+  "gender": "male",
+  "birthDate": "1963-08-06"
+}
