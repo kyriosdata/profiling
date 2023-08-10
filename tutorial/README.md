@@ -12,4 +12,5 @@ Siga este link para localizar como baixar este validador.
 
 ## Executando
 
-- `java -jar validator_cli.jar -version 4.0.1 exemplos\*.json`
+- `java -jar validator_cli.jar -version 4.0.1 exemplos\*.json` Exibe na saída padrão os resultados.
+- `java -jar validator_cli.jar -version4.0.1 exemplos\*.json -html-output resultado.html` Gera página HTML correspondente aos resultados.
