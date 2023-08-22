@@ -48,7 +48,7 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "pt-br",
+              "code": "pt-BR",
               "system": "urn:ietf:bcp:47"
             }
           ]
