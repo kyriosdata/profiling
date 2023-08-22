@@ -1,0 +1,2 @@
+Instance: PacienteInvalido
+InstanceOf: PacienteComunicacaoDefinida
