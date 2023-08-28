@@ -1,4 +1,4 @@
-Alias: $orgao-expedidor = http://www.saude.gov.br/fhir/r4/CodeSystem/BROrgaoExpedidor
+Alias: $oe = http://www.saude.gov.br/fhir/r4/CodeSystem/BROrgaoExpedidor
 
 Instance: cadastro-animal
 InstanceOf: NamingSystem
