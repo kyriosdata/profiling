@@ -1,0 +1,36 @@
+{
+  "resourceType": "Patient",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">José Silva</div>"
+  },
+  "id": "exemplo",
+  "active": true,
+  "gender": "male",
+  "name": [
+    {
+      "use": "official",
+      "given": ["José"],
+      "family": "Silva"
+    },
+    {
+      "use": "nickname",
+      "given": ["Zé"],
+      "family": "Padeiro",
+      "period": {
+        "start": "2010-04-01",
+        "end": "2010-04-23"
+      }
+    }
+  ],
+  "birthDate": "2008-11-21",
+  "multipleBirthBoolean": true,
+  "link": [
+    {
+      "other": {
+        "reference": "http://hapi.fhir.org/baseR4/Patient/id1568758349858"
+      },
+      "type": "seealso"
+    }
+  ]
+}
