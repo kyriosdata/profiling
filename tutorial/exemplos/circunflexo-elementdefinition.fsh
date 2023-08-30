@@ -17,7 +17,6 @@ Description: "Pacientes de língua portuguesa"
 // O código pt-BR é obtido do CodeSystem 
 // identificado pelo oid "urn:ietf:bcp:47"
 
-// Correto: "pt-BR" Errado: "pt-br" 
 * communication.language = urn:ietf:bcp:47#pt-BR
 
 // Para detalhar brevemente este elemento usa-se 
