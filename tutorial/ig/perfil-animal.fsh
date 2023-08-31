@@ -20,3 +20,15 @@ Description: "Dados demográficos de todo animal que trabalha como animal terape
 // (passo 3) Restringir o conteúdo do slice
 
 * identifier[identificadorMAPA].system = "http://www.gov.br/agricultura/ca"
+
+* deceased[x] 1..1
+* deceased[x] only boolean
+
+// Não se aplicam aos animais
+// (elementos vetados)
+
+* telecom 0..0
+* maritalStatus 0..0
+* communication 0..0
+* link 0..0
+

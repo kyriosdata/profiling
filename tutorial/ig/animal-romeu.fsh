@@ -9,3 +9,5 @@ Usage: #example
 
 * identifier[1].system = "http://www.gov.br/agricultura/antigo"
 * identifier[1].value = "123434334-23232"
+
+* deceasedBoolean = false
