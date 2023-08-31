@@ -3,7 +3,7 @@
   "id": "Romeu",
   "meta": {
     "profile": [
-      "http://perfil.com/animal-terapeuta"
+      "http://perfil.com/animal"
     ]
   },
   "text": {
@@ -18,6 +18,13 @@
     {
       "system": "http://www.gov.br/agricultura/antigo",
       "value": "123434334-23232"
+    }
+  ],
+  "name": [
+    {
+      "given": [
+        "Romeu"
+      ]
     }
   ],
   "deceasedBoolean": false,

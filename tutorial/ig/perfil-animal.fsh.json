@@ -5,7 +5,7 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Exemplo</div>"
   },
-  "url": "http://perfil.com/animal-terapeuta",
+  "url": "http://perfil.com/animal",
   "name": "AnimalTerapeuta",
   "title": "Animal terapeuta",
   "status": "active",
@@ -93,6 +93,11 @@
         "path": "Patient.identifier.system",
         "min": 1,
         "patternUri": "http://www.gov.br/agricultura/ca"
+      },
+      {
+        "id": "Patient.name",
+        "path": "Patient.name",
+        "min": 1
       },
       {
         "id": "Patient.telecom",

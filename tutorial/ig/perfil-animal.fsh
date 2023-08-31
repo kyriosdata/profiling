@@ -6,7 +6,7 @@ Id: animal-terapeuta
 Title: "Animal terapeuta"
 Description: "Dados demográficos de todo animal que trabalha como animal terapeuta"
 
-* ^url = "http://perfil.com/animal-terapeuta"
+* ^url = "http://perfil.com/animal"
 * ^status = #active
 
 * ^text.status = #generated
@@ -15,6 +15,7 @@ Description: "Dados demográficos de todo animal que trabalha como animal terape
 * extension contains 
     $animal named nome 1..1 MS
 
+// G1
 // (passo 1) Especificar a lógica de slicing
 
 * identifier ^slicing.discriminator.type = #pattern
@@ -30,6 +31,9 @@ Description: "Dados demográficos de todo animal que trabalha como animal terape
 
 * identifier[identificadorMAPA].system = "http://www.gov.br/agricultura/ca"
 
+// G2
+* name 1..
+
 // G8
 * deceased[x] 1..1
 * deceased[x] only boolean
@@ -42,5 +46,6 @@ Description: "Dados demográficos de todo animal que trabalha como animal terape
 * communication 0..0
 * link 0..0
 
+// G4
 * photo 1..
 
