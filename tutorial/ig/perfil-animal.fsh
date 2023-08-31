@@ -32,3 +32,5 @@ Description: "Dados demográficos de todo animal que trabalha como animal terape
 * communication 0..0
 * link 0..0
 
+* photo 1..
+
