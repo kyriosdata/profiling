@@ -6,6 +6,10 @@
       "http://perfil.com/animal-terapeuta"
     ]
   },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dr. Romeu</div>"
+  },
   "identifier": [
     {
       "system": "http://www.gov.br/agricultura/ca",
@@ -20,6 +24,48 @@
   "photo": [
     {
       "url": "https://images.unsplash.com/photo-1552053831-71594a27632d"
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/patient-animal",
+      "extension": [
+        {
+          "url": "species",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "canislf",
+                "system": "http://hl7.org/fhir/animal-species",
+                "display": "Dog"
+              }
+            ]
+          }
+        },
+        {
+          "url": "breed",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "gret",
+                "system": "http://example.org/fhir/CodeSystem/animal-breed",
+                "display": "Golden Retriever"
+              }
+            ]
+          }
+        },
+        {
+          "url": "genderStatus",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "neutered",
+                "system": "http://hl7.org/fhir/animal-genderstatus"
+              }
+            ]
+          }
+        }
+      ]
     }
   ]
 }

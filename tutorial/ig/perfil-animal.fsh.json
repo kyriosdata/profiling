@@ -1,9 +1,14 @@
 {
   "resourceType": "StructureDefinition",
   "id": "animal-terapeuta",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Exemplo</div>"
+  },
   "url": "http://perfil.com/animal-terapeuta",
   "name": "AnimalTerapeuta",
   "title": "Animal terapeuta",
+  "status": "active",
   "description": "Dados demográficos de todo animal que trabalha como animal terapeuta",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -40,6 +45,27 @@
   "derivation": "constraint",
   "differential": {
     "element": [
+      {
+        "id": "Patient.extension",
+        "path": "Patient.extension",
+        "min": 1
+      },
+      {
+        "id": "Patient.extension:nome",
+        "path": "Patient.extension",
+        "sliceName": "nome",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/patient-animal"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
       {
         "id": "Patient.identifier",
         "path": "Patient.identifier",

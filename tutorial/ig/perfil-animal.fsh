@@ -1,3 +1,5 @@
+Alias: $animal = http://hl7.org/fhir/StructureDefinition/patient-animal
+
 Profile: AnimalTerapeuta
 Parent: Patient
 Id: animal-terapeuta
@@ -5,6 +7,13 @@ Title: "Animal terapeuta"
 Description: "Dados demográficos de todo animal que trabalha como animal terapeuta"
 
 * ^url = "http://perfil.com/animal-terapeuta"
+* ^status = #active
+
+* ^text.status = #generated
+* ^text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Exemplo</div>"
+
+* extension contains 
+    $animal named nome 1..1 MS
 
 // (passo 1) Especificar a lógica de slicing
 
@@ -21,6 +30,7 @@ Description: "Dados demográficos de todo animal que trabalha como animal terape
 
 * identifier[identificadorMAPA].system = "http://www.gov.br/agricultura/ca"
 
+// G8
 * deceased[x] 1..1
 * deceased[x] only boolean
 
