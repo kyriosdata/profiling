@@ -1,0 +1,73 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "animal-terapeuta",
+  "url": "http://perfil.com/animal-terapeuta",
+  "name": "AnimalTerapeuta",
+  "title": "Animal terapeuta",
+  "description": "Dados demográficos de todo animal que trabalha como animal terapeuta",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "cda",
+      "uri": "http://hl7.org/v3/cda",
+      "name": "CDA (R2)"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "loinc",
+      "uri": "http://loinc.org",
+      "name": "LOINC code for the element"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Patient",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Patient",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Patient.identifier",
+        "path": "Patient.identifier",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "system"
+            }
+          ],
+          "rules": "open",
+          "description": "O identificador do MAPA é obrigatório"
+        },
+        "min": 1
+      },
+      {
+        "id": "Patient.identifier:identificadorMAPA",
+        "path": "Patient.identifier",
+        "sliceName": "identificadorMAPA",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Patient.identifier:identificadorMAPA.system",
+        "path": "Patient.identifier.system",
+        "min": 1,
+        "patternUri": "http://www.gov.br/agricultura/ca"
+      }
+    ]
+  }
+}
