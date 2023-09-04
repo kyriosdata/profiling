@@ -1,15 +1,15 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "animal-terapeuta",
+  "id": "animal",
   "text": {
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Exemplo</div>"
   },
   "url": "http://perfil.com/animal",
-  "name": "AnimalTerapeuta",
-  "title": "Animal terapeuta",
+  "name": "Animal",
+  "title": "Animal não humano",
   "status": "active",
-  "description": "Dados demográficos de todo animal que trabalha como animal terapeuta",
+  "description": "Dados demográficos de animal (não humano)",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -48,6 +48,16 @@
       {
         "id": "Patient.extension",
         "path": "Patient.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
         "min": 1
       },
       {
@@ -82,14 +92,14 @@
         "min": 1
       },
       {
-        "id": "Patient.identifier:identificadorMAPA",
+        "id": "Patient.identifier:mapa",
         "path": "Patient.identifier",
-        "sliceName": "identificadorMAPA",
+        "sliceName": "mapa",
         "min": 1,
         "max": "1"
       },
       {
-        "id": "Patient.identifier:identificadorMAPA.system",
+        "id": "Patient.identifier:mapa.system",
         "path": "Patient.identifier.system",
         "min": 1,
         "patternUri": "http://www.gov.br/agricultura/ca"
@@ -115,8 +125,19 @@
         ]
       },
       {
+        "id": "Patient.address",
+        "path": "Patient.address",
+        "min": 1,
+        "max": "1"
+      },
+      {
         "id": "Patient.maritalStatus",
         "path": "Patient.maritalStatus",
+        "max": "0"
+      },
+      {
+        "id": "Patient.multipleBirth[x]",
+        "path": "Patient.multipleBirth[x]",
         "max": "0"
       },
       {
@@ -125,8 +146,32 @@
         "min": 1
       },
       {
+        "id": "Patient.contact",
+        "path": "Patient.contact",
+        "min": 1
+      },
+      {
         "id": "Patient.communication",
         "path": "Patient.communication",
+        "max": "0"
+      },
+      {
+        "id": "Patient.generalPractitioner",
+        "path": "Patient.generalPractitioner",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Practitioner",
+              "http://hl7.org/fhir/StructureDefinition/Organization"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.managingOrganization",
+        "path": "Patient.managingOrganization",
         "max": "0"
       },
       {

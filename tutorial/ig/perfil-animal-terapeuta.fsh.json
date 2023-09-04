@@ -1,0 +1,121 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "animal-terapeuta",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Animal terapeuta</div>"
+  },
+  "url": "http://perfil.com/animal-terapeuta",
+  "name": "AnimalTerapeuta",
+  "title": "Animal terapeuta",
+  "status": "active",
+  "description": "Animal não humano que contribui com assistência à saúde",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "servd",
+      "uri": "http://www.omg.org/spec/ServD/1.0/",
+      "name": "ServD"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Practitioner",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Practitioner",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Practitioner.identifier",
+        "path": "Practitioner.identifier",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "system"
+            }
+          ],
+          "rules": "open",
+          "description": "Slice conforme identifier.code"
+        },
+        "min": 2
+      },
+      {
+        "id": "Practitioner.identifier:mapa",
+        "path": "Practitioner.identifier",
+        "sliceName": "mapa",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Practitioner.identifier:mapa.system",
+        "path": "Practitioner.identifier.system",
+        "min": 1,
+        "patternUri": "http://www.gov.br/agricultura/ca"
+      },
+      {
+        "id": "Practitioner.identifier:crmv",
+        "path": "Practitioner.identifier",
+        "sliceName": "crmv",
+        "min": 1,
+        "max": "*"
+      },
+      {
+        "id": "Practitioner.identifier:crmv.system",
+        "path": "Practitioner.identifier.system",
+        "min": 1,
+        "patternUri": "http://crmv.org/cat"
+      },
+      {
+        "id": "Practitioner.active",
+        "path": "Practitioner.active",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.name",
+        "path": "Practitioner.name",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.telecom",
+        "path": "Practitioner.telecom",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.address",
+        "path": "Practitioner.address",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.photo",
+        "path": "Practitioner.photo",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.qualification",
+        "path": "Practitioner.qualification",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.communication",
+        "path": "Practitioner.communication",
+        "max": "0"
+      }
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "QualificacaoAnimalTerapeuta",
+  "id": "animal-qualificacao",
+  "title": "Qualificação de animal terapeuta",
+  "description": "Vocabulário para designar capacidade de um animal terapeuta",
+  "url": "http://perfil.com/CodeSystem/animal-qualificacao",
+  "concept": [
+    {
+      "code": "emocional",
+      "display": "Emocional",
+      "definition": "Animal que pode ser empregado para apoio emocional"
+    },
+    {
+      "code": "terapia",
+      "display": "Animais para terapia",
+      "definition": "Animais treinados para interagir com pacientes em ambiente de saúde"
+    },
+    {
+      "code": "servico",
+      "display": "Serviço",
+      "definition": "Animais treinados para auxiliar pessoas com deficiências físicas."
+    },
+    {
+      "code": "detector",
+      "display": "Detector de doenças",
+      "definition": "Animas que possuem a habilidade para detectar doenças, por exemplo, pelo odor."
+    },
+    {
+      "code": "alerta",
+      "display": "Alerta",
+      "definition": "Animas que têm habilidade para detectar sinais de crise e iniciativa para fazer alerta."
+    }
+  ],
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Códigos para habilidades de animais terapeutas</div>"
+  },
+  "version": "1.0.0",
+  "experimental": true,
+  "valueSet": "http://perfil.com/ValueSet/animal-qualificacao",
+  "caseSensitive": true,
+  "count": 5
+}
