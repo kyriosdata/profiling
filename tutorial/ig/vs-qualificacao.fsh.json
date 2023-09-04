@@ -1,0 +1,39 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "QualificacaoAnimalTerapeuta",
+  "id": "animal-qualificacao",
+  "title": "Códigos válidos para qualificação de animal terapeuta",
+  "description": "Códigos para designar capacidade de um animal terapeuta",
+  "url": "http://perfil.com/ValueSet/animal-qualificacao",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Códigos para habilidades de animais terapeutas</div>"
+  },
+  "version": "1.0.0",
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://perfil.com/CodeSystem/animal-qualificacao",
+        "concept": [
+          {
+            "code": "emocional"
+          },
+          {
+            "code": "terapia"
+          },
+          {
+            "code": "servico"
+          },
+          {
+            "code": "detector"
+          },
+          {
+            "code": "alerta"
+          }
+        ]
+      }
+    ]
+  }
+}
