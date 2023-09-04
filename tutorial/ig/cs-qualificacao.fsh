@@ -3,7 +3,6 @@ Id: animal-qualificacao
 Title: "Qualificação de animal terapeuta"
 Description:  "Vocabulário para designar capacidade de um animal terapeuta"
 
-
 * ^text.status = #generated
 * ^text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Códigos para
 habilidades de animais terapeutas</div>"
