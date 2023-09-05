@@ -28,3 +28,7 @@ Usage: #example
 * extension[0].extension[1].valueCodeableConcept = $animal-breed#gret "Golden Retriever"
 * extension[0].extension[2].url = "genderStatus"
 * extension[0].extension[2].valueCodeableConcept = $animal-genderstatus#neutered
+
+* address.text = "Endereço do Dr. Romeu"
+* contact.name.text = "Tutora Marília"
+* generalPractitioner = Reference(Organization/123)

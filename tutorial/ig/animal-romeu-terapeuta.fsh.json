@@ -1,0 +1,58 @@
+{
+  "resourceType": "Practitioner",
+  "id": "Romeu",
+  "meta": {
+    "profile": [
+      "http://perfil.com/animal-terapeuta"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dr. Romeu</div>"
+  },
+  "identifier": [
+    {
+      "system": "http://www.gov.br/agricultura/ca",
+      "value": "12.22.333"
+    },
+    {
+      "system": "http://crmv.org/cat",
+      "value": "crmv.codigo.123"
+    }
+  ],
+  "name": [
+    {
+      "given": [
+        "Romeu"
+      ]
+    }
+  ],
+  "photo": [
+    {
+      "url": "https://images.unsplash.com/photo-1552053831-71594a27632d"
+    }
+  ],
+  "active": true,
+  "address": [
+    {
+      "text": "Endereço do Dr. Romeu"
+    }
+  ],
+  "telecom": [
+    {
+      "use": "work"
+    }
+  ],
+  "qualification": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "alerta",
+            "system": "http://perfil.com/CodeSystem/animal-qualificacao"
+          }
+        ]
+      }
+    }
+  ]
+}
