@@ -1,4 +1,5 @@
 Alias: $animal = http://hl7.org/fhir/StructureDefinition/patient-animal
+Alias: $at = http://hl7.org/fhir/StructureDefinition/practitioner-animalSpecies
 
 Profile: AnimalTerapeuta
 Parent: Practitioner
@@ -66,3 +67,6 @@ Description: "Animal não humano que contribui com assistência à saúde"
 // estabelecer o que deve ser registrado. 
 
 * communication 0..0
+
+* extension contains 
+    $at named terapeuta 1..1 MS

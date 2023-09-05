@@ -1,3 +1,6 @@
+Alias: $at = http://hl7.org/fhir/StructureDefinition/practitioner-animalSpecies
+Alias: $animal-species = http://hl7.org/fhir/animal-species
+
 Instance: Romeu
 InstanceOf: Practitioner
 Usage: #example
@@ -20,3 +23,6 @@ Usage: #example
 * telecom.use = #work
 
 * qualification.code = http://perfil.com/CodeSystem/animal-qualificacao#alerta
+
+* extension[0].url = $at
+* extension[0].valueCodeableConcept = $animal-species#canislf "Dog"

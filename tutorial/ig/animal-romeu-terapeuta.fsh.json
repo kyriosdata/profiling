@@ -54,5 +54,19 @@
         ]
       }
     }
+  ],
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/practitioner-animalSpecies",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "canislf",
+            "system": "http://hl7.org/fhir/animal-species",
+            "display": "Dog"
+          }
+        ]
+      }
+    }
   ]
 }
