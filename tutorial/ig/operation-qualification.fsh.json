@@ -1,0 +1,20 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "BuscaPorQualificacao",
+  "url": "http://perfil.com/OperationDefinition/qualification",
+  "title": "Definição de busca por qualificação de animal terapeuta",
+  "description": "Definição da operação de busca por qualificação de animal terapeuta",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Busca por qualificação</div>"
+  },
+  "version": "1.0.0",
+  "name": "Qualification",
+  "status": "active",
+  "kind": "query",
+  "experimental": true,
+  "code": "qualification",
+  "system": false,
+  "type": true,
+  "instance": false
+}
