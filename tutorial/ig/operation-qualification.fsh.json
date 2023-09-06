@@ -1,6 +1,6 @@
 {
   "resourceType": "OperationDefinition",
-  "id": "BuscaPorQualificacao",
+  "id": "animal-busca-por-qualificacao",
   "url": "http://perfil.com/OperationDefinition/qualification",
   "title": "Definição de busca por qualificação de animal terapeuta",
   "description": "Definição da operação de busca por qualificação de animal terapeuta",
@@ -9,12 +9,40 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Busca por qualificação</div>"
   },
   "version": "1.0.0",
-  "name": "Qualification",
+  "name": "LocalizaAnimalTerapeutaPorQualificacao",
   "status": "active",
-  "kind": "query",
+  "kind": "operation",
+  "date": "2023-09-06T09:29:23+11:00",
+  "publisher": "CGIS (UFG) - Treinamento em FHIR",
   "experimental": true,
   "code": "qualification",
   "system": false,
   "type": true,
-  "instance": false
+  "instance": true,
+  "comment": "Detalha a operação de busca, baseada na qualificação, por animal que contribui com assistência à saúde.",
+  "resource": [
+    "Practitioner"
+  ],
+  "parameter": [
+    {
+      "name": "code",
+      "use": "in",
+      "min": 1,
+      "max": "1",
+      "documentation": "O código da qualificação de interesse",
+      "type": "code",
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://perfil.com/ValueSet/animal-qualificacao"
+      }
+    },
+    {
+      "name": "return",
+      "use": "out",
+      "min": 1,
+      "max": "1",
+      "documentation": "Instâncias de Practitioner referente a animais que possuem a qualificação indicada.",
+      "type": "Bundle"
+    }
+  ]
 }
