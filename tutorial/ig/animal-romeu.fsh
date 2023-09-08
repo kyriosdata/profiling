@@ -9,7 +9,7 @@ Usage: #example
 * text.status = #generated
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Dr. Romeu</div>"
 
-* meta.profile = "http://perfil.com/animal"
+* meta.profile = "http://example.org/animal"
 
 * identifier[0].system = "http://www.gov.br/agricultura/ca"
 * identifier[0].value = "12.22.333"

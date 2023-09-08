@@ -6,7 +6,7 @@ Id: animal
 Title: "Animal não humano"
 Description: "Dados demográficos de animal (não humano)"
 
-* ^url = "http://perfil.com/animal"
+* ^url = "http://example.org/animal"
 * ^status = #active
 
 * ^text.status = #generated
