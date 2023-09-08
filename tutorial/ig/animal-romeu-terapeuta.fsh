@@ -1,13 +1,13 @@
 Alias: $at = http://hl7.org/fhir/StructureDefinition/practitioner-animalSpecies
 Alias: $animal-species = http://hl7.org/fhir/animal-species
 
-Instance: Romeu
+Instance: Terapeuta
 InstanceOf: Practitioner
 Usage: #example
 * text.status = #generated
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Dr. Romeu</div>"
 
-* meta.profile = "http://perfil.com/animal-terapeuta"
+* meta.profile = "http://example.org/animal-terapeuta"
 
 * identifier[0].system = "http://www.gov.br/agricultura/ca"
 * identifier[0].value = "12.22.333"
@@ -22,7 +22,7 @@ Usage: #example
 * address.text = "Endereço do Dr. Romeu"
 * telecom.use = #work
 
-* qualification.code = http://perfil.com/CodeSystem/animal-qualificacao#alerta
+* qualification.code = http://example.org/CodeSystem/animal-qualificacao#alerta
 
 * extension[0].url = $at
 * extension[0].valueCodeableConcept = $animal-species#canislf "Dog"
