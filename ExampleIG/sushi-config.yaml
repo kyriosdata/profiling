@@ -6,18 +6,18 @@
 id: fhir.example
 canonical: http://example.org
 name: ExampleIG
-# title: Example Title
-# description: Example Implementation Guide for getting started with SUSHI
+title: Guia de Implementação
+description: Ilustra criação de guias de implementação
 status: draft # draft | active | retired | unknown
 version: 0.1.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2023+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 # license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
-# jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
+jurisdiction: urn:iso:std:iso:3166#BR
 publisher:
-  name: Example Publisher
-  url: http://example.org/example-publisher
+  name: CGIS
+  url: https://cgis.ufg.br/
   # email: test@example.org
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
@@ -176,9 +176,6 @@ menu:
 # * copyright
 # * packageId
 #
-
-copyright: "Uso público"
-
 #
 # ╭──────────────────────────────────────────SUSHI flags───────────────────────────────────────────╮
 # │  The flags below configure aspects of how SUSHI processes FSH.                                 │
