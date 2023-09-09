@@ -6,6 +6,7 @@ Alias: $animal-genderstatus = http://hl7.org/fhir/animal-genderstatus
 Instance: Romeu
 InstanceOf: Patient
 Usage: #example
+Description: "Um exemplo de animal"
 * text.status = #generated
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Dr. Romeu</div>"
 
@@ -28,4 +29,4 @@ Usage: #example
 
 * address.text = "Endereço do Dr. Romeu"
 * contact.name.text = "Tutora Marília"
-* generalPractitioner = Reference(Organization/123)
+* generalPractitioner = Reference(Organization/ClinicaAnimalFeliz)

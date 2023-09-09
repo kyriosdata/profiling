@@ -3,6 +3,7 @@ Alias: $oe = http://www.saude.gov.br/fhir/r4/CodeSystem/BROrgaoExpedidor
 Instance: cadastro-animal
 InstanceOf: NamingSystem
 Usage: #example
+Description: "O nome do código único de um animal (não humano)"
 
 * text.status = #generated
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Cadastro de Animal</div>"

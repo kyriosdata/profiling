@@ -1,6 +1,6 @@
 Alias: $qualificacao = http://perfil.com/CodeSystem/animal-qualificacao
 
-Instance: animal-busca-por-qualificacao
+Instance: qualification
 InstanceOf: OperationDefinition
 Title: "Definição de busca por qualificação de animal terapeuta"
 Description: "Definição da operação de busca por qualificação de animal terapeuta"

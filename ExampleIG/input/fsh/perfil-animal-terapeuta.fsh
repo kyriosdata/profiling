@@ -7,7 +7,7 @@ Id: animal-terapeuta
 Title: "Animal terapeuta"
 Description: "Animal não humano que contribui com assistência à saúde"
 
-* ^url = "http://example.org/animal-terapeuta"
+* ^url = "http://example.org/StructureDefinition/animal-terapeuta"
 * ^status = #active
 
 * ^text.status = #generated

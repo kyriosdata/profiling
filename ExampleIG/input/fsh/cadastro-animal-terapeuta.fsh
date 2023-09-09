@@ -2,6 +2,7 @@ Alias: $tipo = http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoIdentificador
 
 Instance: cadastro-animal-terapeuta
 InstanceOf: NamingSystem
+Description: "O nome do código único de um animal terapeuta"
 
 * text.status = #generated
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Animal terapeuta</div>"

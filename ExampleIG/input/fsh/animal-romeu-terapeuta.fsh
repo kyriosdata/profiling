@@ -4,6 +4,7 @@ Alias: $animal-species = http://hl7.org/fhir/animal-species
 Instance: Terapeuta
 InstanceOf: Practitioner
 Usage: #example
+Description: "Um animal terapeuta não humano"
 * text.status = #generated
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Dr. Romeu</div>"
 
