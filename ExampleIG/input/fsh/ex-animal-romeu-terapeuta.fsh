@@ -8,7 +8,7 @@ Description: "Um animal terapeuta não humano"
 * text.status = #generated
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Dr. Romeu</div>"
 
-* meta.profile = "http://example.org/animal-terapeuta"
+* meta.profile = "http://example.org/StructureDefinition/animal-terapeuta"
 
 * identifier[0].system = "http://www.gov.br/agricultura/ca"
 * identifier[0].value = "12.22.333"

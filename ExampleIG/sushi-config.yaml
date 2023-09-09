@@ -176,6 +176,9 @@ menu:
 # * copyright
 # * packageId
 #
+
+copyright: "Uso público"
+
 #
 # ╭──────────────────────────────────────────SUSHI flags───────────────────────────────────────────╮
 # │  The flags below configure aspects of how SUSHI processes FSH.                                 │
