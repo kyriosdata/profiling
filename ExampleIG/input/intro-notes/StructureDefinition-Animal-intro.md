@@ -1,4 +1,4 @@
-## Informação introdutória
+### Informação introdutória
 
 Podem ser acrescentada para cada recurso.
 Deve ser depositada no diretório `input/intro-notes` e o nome
