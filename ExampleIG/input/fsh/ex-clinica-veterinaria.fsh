@@ -1,4 +1,4 @@
-Instance: ClinicaAnimalFeliz
+Instance: clinica-veterinaria
 InstanceOf: Organization
 Usage: #example
 Title: "Clínica Veterinária Animal Feliz"

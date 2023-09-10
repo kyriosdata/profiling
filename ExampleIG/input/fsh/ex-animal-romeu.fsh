@@ -3,7 +3,7 @@ Alias: $animal-species = http://hl7.org/fhir/animal-species
 Alias: $animal-breed = http://example.org/fhir/CodeSystem/animal-breed
 Alias: $animal-genderstatus = http://hl7.org/fhir/animal-genderstatus
 
-Instance: Romeu
+Instance: romeu
 InstanceOf: Patient
 Usage: #example
 Description: "Um exemplo de animal"
