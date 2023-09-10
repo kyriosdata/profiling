@@ -7,7 +7,7 @@
     <h1>404.html</h1>
     <script>
         const converte = (pathname) => {
-            const recursos = [ "StructureDefinition", "CodeSystem", "ValueSet"];
+            const recursos = [ "StructureDefinition", "CodeSystem", "ValueSet", "Organization", "Practitioner", "Patient", "NamingSystem"];
             for (let recurso of recursos) {
                 let inicio = pathname.indexOf(`/${recurso}/`);
                 if (inicio >= 0) {
