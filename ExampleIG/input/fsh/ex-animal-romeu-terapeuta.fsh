@@ -1,7 +1,7 @@
 Alias: $at = http://hl7.org/fhir/StructureDefinition/practitioner-animalSpecies
 Alias: $animal-species = http://hl7.org/fhir/animal-species
 
-Instance: Terapeuta
+Instance: terapeuta
 InstanceOf: Practitioner
 Usage: #example
 Description: "Um animal terapeuta não humano"

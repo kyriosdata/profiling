@@ -29,4 +29,4 @@ Description: "Um exemplo de animal"
 
 * address.text = "Endereço do Dr. Romeu"
 * contact.name.text = "Tutora Marília"
-* generalPractitioner = Reference(Organization/ClinicaAnimalFeliz)
+* generalPractitioner = Reference(Organization/clinica-veterinaria)
