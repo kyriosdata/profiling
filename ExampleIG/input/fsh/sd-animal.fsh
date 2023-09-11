@@ -6,7 +6,7 @@ Id: animal
 Title: "Animal não humano"
 Description: "Dados demográficos de animal (não humano)"
 
-// * ^url = "http://example.org/StructureDefinition/animal"
+// URL definida com base na URL canônica do projeto
 * ^status = #active
 
 * ^text.status = #generated

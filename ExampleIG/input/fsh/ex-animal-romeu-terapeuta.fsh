@@ -8,7 +8,7 @@ Description: "Um animal terapeuta não humano"
 * text.status = #generated
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Dr. Romeu</div>"
 
-* meta.profile = "https://kyriosdata.github.io/profiling/StructureDefinition/animal-terapeuta"
+* meta.profile = Canonical(animal-terapeuta)
 
 * identifier[0].system = "http://www.gov.br/agricultura/ca"
 * identifier[0].value = "12.22.333"
@@ -23,7 +23,8 @@ Description: "Um animal terapeuta não humano"
 * address.text = "Endereço do Dr. Romeu"
 * telecom.use = #work
 
-* qualification.code = http://example.org/CodeSystem/animal-qualificacao#alerta
+* qualification.code.coding.system = Canonical(animal-terapeuta)
+* qualification.code.coding.code = #alerta
 
 * extension[0].url = $at
 * extension[0].valueCodeableConcept = $animal-species#canislf "Dog"

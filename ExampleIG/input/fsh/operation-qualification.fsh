@@ -1,5 +1,3 @@
-Alias: $qualificacao = ValueSet/animal-qualificacao
-
 Instance: qualification
 InstanceOf: OperationDefinition
 Title: "Definição de busca por qualificação de animal terapeuta"
@@ -9,7 +7,8 @@ Usage: #definition
 * text.status = #generated
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Busca por qualificação</div>"
 
-// * url = "http://example.org/OperationDefinition/qualification"
+// URL definida com base na URL canônica do projeto
+
 * version = "1.0.0"
 
 * name = "LocalizaAnimalTerapeutaPorQualificacao"
@@ -32,7 +31,7 @@ Usage: #definition
 * parameter[0].documentation = "O código da qualificação de interesse"
 * parameter[0].type = #code
 * parameter[0].binding.strength = #required
-* parameter[0].binding.valueSet = $qualificacao
+* parameter[0].binding.valueSet = Canonical(ValoresQualificacaoAnimalTerapeuta)
 
 * parameter[1].name = #return
 * parameter[1].use = #out

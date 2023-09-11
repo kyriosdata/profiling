@@ -5,8 +5,11 @@ InstanceOf: NamingSystem
 Usage: #example
 Description: "O nome do código único de um animal (não humano)"
 
-* text.status = #generated
-* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Cadastro de Animal</div>"
+* text.status = #empty
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><h2>Cadastro de Animal</h2>
+Nome dado ao código único atribuído a cada animal identificado no Brasil.
+Observe que se trata de um problema hipotético e que a solução, neste
+cado, não foi validade, trata-se apenas de uma especulação, uma possibilidade.</div>"
 
 * name = "CadastroDeAnimal"
 * status = #active
