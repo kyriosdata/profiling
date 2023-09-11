@@ -1,5 +1,3 @@
-Alias: $cs = https://kyriosdata.github.io/profiling/CodeSystem/animal-qualificacao
-
 ValueSet: ValoresQualificacaoAnimalTerapeuta
 Id: animal-qualificacao
 Title: "Códigos válidos para qualificação de animal terapeuta"
@@ -14,4 +12,4 @@ habilidades de animais terapeutas</div>"
 * ^version = "1.0.0"
 * ^status = #active
 * ^experimental = true
-* include codes from system $cs
+* include codes from system QualificacaoAnimalTerapeuta

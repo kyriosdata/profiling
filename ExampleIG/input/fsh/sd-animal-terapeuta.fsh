@@ -1,6 +1,3 @@
-Alias: $animal = http://hl7.org/fhir/StructureDefinition/patient-animal
-Alias: $at = http://hl7.org/fhir/StructureDefinition/practitioner-animalSpecies
-
 Profile: AnimalTerapeuta
 Parent: Practitioner
 Id: animal-terapeuta
@@ -33,8 +30,8 @@ Description: "Animal não humano que contribui com assistência à saúde"
 
 // (passo 3) Restringir o conteúdo do slice
 
-* identifier[mapa].system = "http://www.gov.br/agricultura/ca"
-* identifier[crmv].system = "http://crmv.org/cat"
+* identifier[mapa].system = $ca
+* identifier[crmv].system = $cat
 
 // P3
 * active 1..1

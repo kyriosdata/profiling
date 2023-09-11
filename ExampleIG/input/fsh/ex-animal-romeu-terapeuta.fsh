@@ -1,6 +1,3 @@
-Alias: $at = http://hl7.org/fhir/StructureDefinition/practitioner-animalSpecies
-Alias: $animal-species = http://hl7.org/fhir/animal-species
-
 Instance: terapeuta
 InstanceOf: Practitioner
 Usage: #example
@@ -10,10 +7,10 @@ Description: "Um animal terapeuta não humano"
 
 * meta.profile = Canonical(animal-terapeuta)
 
-* identifier[0].system = "http://www.gov.br/agricultura/ca"
+* identifier[0].system = $ca
 * identifier[0].value = "12.22.333"
 
-* identifier[1].system = "http://crmv.org/cat"
+* identifier[1].system = $cat
 * identifier[1].value = "crmv.codigo.123"
 
 * name.given = "Romeu"

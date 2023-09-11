@@ -1,0 +1,25 @@
+﻿{
+  "package-id" : "fhir.example",
+  "title" : "Ilustra Guia de Implementação",
+  "canonical" : "https://kyriosdata.github.io/profiling",
+  "introduction" : "Guia de implementação para exemplo",
+  "list" : [
+    {
+      "version" : "current",
+      "desc" : "Continuous Integration Build (latest in version control)",
+      "path" : "https://build.fhir.org/ig/HL7/ig-template-base",
+      "status" : "ci-build",
+      "current" : true,
+      "date" : "2023-09-11"
+    },
+    {
+      "version" : "0.4.0",
+      "desc" : "Fix bugs in xslt + add test tab",
+      "path" : "http://fhir.org/templates/fhir.base.template/0.4.0",
+      "status" : "release",
+      "sequence" : "Publications",
+      "current" : true,
+      "date" : "2022-12-17"
+    }
+  ]
+}

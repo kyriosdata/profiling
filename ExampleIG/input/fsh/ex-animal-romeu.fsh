@@ -1,8 +1,3 @@
-Alias: $animal = http://hl7.org/fhir/StructureDefinition/patient-animal
-Alias: $animal-species = http://hl7.org/fhir/animal-species
-Alias: $animal-breed = http://example.org/fhir/CodeSystem/animal-breed
-Alias: $animal-genderstatus = http://hl7.org/fhir/animal-genderstatus
-
 Instance: romeu
 InstanceOf: Patient
 Usage: #example
@@ -12,7 +7,7 @@ Description: "Um exemplo de animal"
 
 * meta.profile = Canonical(animal)
 
-* identifier[0].system = "http://www.gov.br/agricultura/ca"
+* identifier[0].system = $ca
 * identifier[0].value = "12.22.333"
 
 * name.given = "Romeu"

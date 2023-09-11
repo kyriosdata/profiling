@@ -8,10 +8,11 @@ Description:  "Vocabulário para designar capacidade de um animal terapeuta"
 habilidades de animais terapeutas</div>"
 
 // URL definida com base na URL canônica do projeto
+
 * ^version = "1.0.0"
 * ^status = #active
 * ^experimental = true
-* ^valueSet = "http://example.org/ValueSet/animal-qualificacao"
+* ^valueSet = Canonical(animal-qualificacao)
 * ^caseSensitive = true
 
 * #emocional "Emocional"

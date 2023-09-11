@@ -1,5 +1,3 @@
-Alias: $animal = http://hl7.org/fhir/StructureDefinition/patient-animal
-
 Profile: Animal
 Parent: Patient
 Id: animal
@@ -7,6 +5,7 @@ Title: "Animal não humano"
 Description: "Dados demográficos de animal (não humano)"
 
 // URL definida com base na URL canônica do projeto
+
 * ^status = #active
 
 * ^text.status = #generated
@@ -30,7 +29,7 @@ Description: "Dados demográficos de animal (não humano)"
 
 // (passo 3) Restringir o conteúdo do slice
 
-* identifier[mapa].system = "http://www.gov.br/agricultura/ca"
+* identifier[mapa].system = $ca
 
 // G2
 * name 1..
