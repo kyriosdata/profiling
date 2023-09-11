@@ -1,5 +1,5 @@
 {
-  "package-id": "fhir.base",
+  "package-id": "fhir.example",
   "version": "0.1.1",
   "path": "https://kyriosdata.github.io/profiling",
   "mode": "working",
