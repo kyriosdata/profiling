@@ -7,16 +7,15 @@
     {
       "version" : "current",
       "desc" : "Continuous Integration Build (latest in version control)",
-      "path" : "https://build.fhir.org/ig/HL7/ig-template-base",
+      "path" : "https://kyriosdata.github.io/profiling",
       "status" : "ci-build",
-      "current" : true,
-      "date" : "2023-09-11"
+      "current" : true
     },
     {
-      "version" : "0.4.0",
-      "desc" : "Fix bugs in xslt + add test tab",
+      "version" : "0.1.0",
+      "desc" : "Versão ainda em desenvolvimento",
       "path" : "http://fhir.org/templates/fhir.base.template/0.4.0",
-      "status" : "release",
+      "status" : "draf",
       "sequence" : "Publications",
       "current" : true,
       "date" : "2022-12-17"
