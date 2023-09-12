@@ -1,17 +1,17 @@
-# ExampleIG
+### Cenário hipotético
 
 Este Guia de Implementação é proposto para um cenário hipotético e visa
 orientar aqueles que desejam criar guias de implementação.
 
-## Problema
+### Problema
 
 Animais empregados em procedimentos terapêuticos, os animais terapeutas, são treinados e tratados por estabelecimentos de saúde, que não comunicam as características destes animais entre si, o que dificulta a utilização dos animais em outros estabelecimentos além daquele de origem. Em consequência, podem ser subutilizados, apesar dos custos com treinamentos e cuidados necessários com a saúde destes animais.
 
-## Solução
+### Solução
 
 Uma base de dados que pode ser mantida e consultada eletronicamente, aqui denominada de Cadastro de Animais Terapeutas (CAT). O CAT é uma proposta de solução a ser incorporada pela RNDS para permitir que estabelecimentos de saúde possam cadastrar seus animais terapeutas e consultar a disponibilidade de animais terapeutas em todo o território nacional.
 
-## Casos de uso
+### Casos de uso
 
 São dois:
 
