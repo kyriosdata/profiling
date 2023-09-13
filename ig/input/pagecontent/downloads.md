@@ -2,12 +2,12 @@ Além do conteúdo do guia, ou seja, textos
 e imagens, vários arquivos
 são disponibilizados por conveniência.
 
-#### NPM Package
+### NPM Package
 
 O arquivo [package.tgz](package.tgz) contém as definições em
 formato reconhecido por um servidor FHIR.
 
-#### Definições em vários formatos
+### Definições em vários formatos
 
 Também é possível baixar as definições além do formato NPM Package (acima):
 
@@ -21,7 +21,7 @@ Também é possível baixar as definições além do formato NPM Package (acima)
 - [JSON](examples.json.zip)
 - [TTL](examples.ttl.zip)
 
-#### Todo o Guia
+### Todo o Guia
 
 Baixe o Guia de Implementação completo, todo ele, inclusive com os
 arquivos citados anteriormente [aqui](full-ig.zip).
