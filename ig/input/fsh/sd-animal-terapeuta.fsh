@@ -77,3 +77,7 @@ Description: "Animal não humano que contribui com assistência à saúde"
 
 * extension[especie] ^short = "A espécie do animal"
 * extension[especie].valueCodeableConcept from http://hl7.org/fhir/ValueSet/animal-species (required)
+
+// Invariante (restrição)
+
+* obeys endereco-nao-financeiro

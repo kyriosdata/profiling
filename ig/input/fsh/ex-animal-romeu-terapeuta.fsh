@@ -18,6 +18,9 @@ Description: "Um animal terapeuta não humano"
 
 * active = true
 * address.text = "Endereço do Dr. Romeu"
+
+// Invariante impede que seja #billing
+* address.use = #home
 * telecom.use = #work
 
 * qualification.code.coding.system = Canonical(QualificacaoAnimalTerapeuta)
