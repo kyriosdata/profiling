@@ -12,13 +12,19 @@ necessários, mas não consultados.
 
 ## Publicação usando github pages
 
-- Gerar guia (\_genonce)
+- Seja **ig** o diretório corrente
+- Gerar versão do guia no diretório **output** (_\_genonce_)
 - Copiar arquivo 404.html para **output**. Este arquivo é uma estratégia para
-  fazer o github pages server páginas "não encontradas", por exemplo, Observation/x para
-  Observation-x.html.
+  fazer o github pages servir páginas "não encontradas", pois orienta o navegador a consultar
+  a página _Observation-x.html_ se a requisição é para _Observation/x_.
 - Arquivo package-list.json também deve estar em **output**. Está na raiz com a extensão adicional .old apenas para evitar warning. Copiar para **output** sem este sufixo.
-- Mover diretório **output** para tmp
-- Fazer checkout da branch gh-pages
-- (windows) robocopy tmp\output profiling /E
+- Ir para diretório temporário 
+- git clone https://github.com/kyriosdata/profiling
+- cd profiling
+- git checkout gh-pages
+- (windows) robocopy ig\output . /E
+- git add .
+- git commit -am "atualização"
+- git push
 - Não se pode excluir o que não está no diretório output, caso contrário, será removido .git
 - Adicionar, realizar o commit e push.
