@@ -59,8 +59,10 @@ Description: "Animal não humano que contribui com assistência à saúde"
 
 // P7
 * qualification 1..
-* qualification.code.coding from ValoresQualificacaoAnimalTerapeuta (required)
+* qualification.code.coding.code from ValoresQualificacaoAnimalTerapeuta (required)
 * qualification ^short = "Identifica as capacidades do animal"
+
+* qualification.code.coding.code ^short = "O código que identifica a qualificação do animal"
 
 // P8
 * photo 1..
