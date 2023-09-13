@@ -4,6 +4,8 @@ Id: animal-terapeuta
 Title: "Animal terapeuta"
 Description: "Animal não humano que contribui com assistência à saúde"
 
+* . ^short = "O animal não humano que participa de assistência à saúde"
+
 * ^status = #active
 
 * ^text.status = #generated
@@ -72,3 +74,6 @@ Description: "Animal não humano que contribui com assistência à saúde"
 
 * extension contains 
     $at named especie 1..1 MS
+
+* extension[especie] ^short = "A espécie do animal"
+* extension[especie].valueCodeableConcept from http://hl7.org/fhir/ValueSet/animal-species (required)
