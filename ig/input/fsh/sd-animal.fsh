@@ -4,6 +4,8 @@ Id: animal
 Title: "Animal não humano"
 Description: "Dados demográficos de animal (não humano)"
 
+* . ^short = "Dados demográficos do animal não humano que auxilia na assistência à saúde"
+
 // URL definida com base na URL canônica do projeto
 
 * ^status = #active
@@ -27,33 +29,51 @@ Description: "Dados demográficos de animal (não humano)"
 
 * identifier contains mapa 1..1
 
+* identifier ^short = "O identificador do animal"
+
 // (passo 3) Restringir o conteúdo do slice
 
 * identifier[mapa].system = $ca
 
+* identifier[mapa] ^short = "O identificador único do animal atribuído pelo MAPA"
+* identifier[mapa].system ^short = "O nome único do identificador gerado pelo MAPA"
+
 // G2
 * name 1..
+* name ^short = "O nome pelo qual o animal é conhecido"
 
 // G3
 * contact 1..
+* contact ^short = "O contado do responsável ou guardião"
 
 // G4
 * photo 1..
+
+* photo ^short = "Uma foto do animal"
 
 // G5
 * generalPractitioner 1..
 * generalPractitioner only Reference(Practitioner or Organization)
 
+* generalPractitioner ^short = "Pode ser um profissional ou organização que é responsável pelo animal"
+
 // G6 e G7
 * extension contains 
-    $animal named nome 1..1 MS
+    $animal named detalhes 1..1 MS
+
+* extension[detalhes] ^short = "Permite detalhar informações sobre o animal: espécie, raça e estado dos órgãos reprodutivos"
+* extension ^short = "Detalhes sobre o animal"
 
 // G8
 * deceased[x] 1..1
 * deceased[x] only boolean
 
+* deceased[x] ^short = "Identifica se o animal está morto"
+
 // G9
 * address 1..1
+
+* address ^short = "O endereço de residência do animal"
 
 // Elementos não incluídos no modelo de informação
 // (estratégia rígida foi adotada, elementos vetados)
