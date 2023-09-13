@@ -1,5 +1,5 @@
 ValueSet: ValoresQualificacaoAnimalTerapeuta
-Id: animal-qualificacao
+Id: vs-qualificacao
 Title: "Códigos válidos para qualificação de animal terapeuta"
 Description: "Códigos para designar capacidade de um animal terapeuta"
 

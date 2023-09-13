@@ -1,7 +1,7 @@
 CodeSystem: QualificacaoAnimalTerapeuta
-Id: animal-qualificacao
+Id: qualificacao
 Title: "Qualificação de animal terapeuta"
-Description:  "Vocabulário para designar capacidade de um animal terapeuta"
+Description:  "Vocabulário para designar as capacidades de um animal terapeuta"
 
 * ^text.status = #generated
 * ^text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Códigos para
@@ -12,16 +12,16 @@ habilidades de animais terapeutas</div>"
 * ^version = "1.0.0"
 * ^status = #active
 * ^experimental = true
-* ^valueSet = Canonical(animal-qualificacao)
+* ^valueSet = Canonical(vs-qualificacao)
 * ^caseSensitive = true
 
 * #emocional "Emocional"
-    "Animal que pode ser empregado para apoio emocional"
-* #terapia "Animais para terapia"
-    "Animais treinados para interagir com pacientes em ambiente de saúde"
+    "Apoio emocional"
+* #terapia "Animal para terapia"
+    "Treinado para interagir com pacientes em ambiente de saúde"
 * #servico "Serviço"
-    "Animais treinados para auxiliar pessoas com deficiências físicas."
+    "Treinados para auxiliar pessoas com deficiências físicas"
 * #detector "Detector de doenças"
-    "Animas que possuem a habilidade para detectar doenças, por exemplo, pelo odor."
+    "Apto a detectar doenças, por exemplo, pelo odor"
 * #alerta "Alerta"
-    "Animas que têm habilidade para detectar sinais de crise e iniciativa para fazer alerta."
+    "Apto a detectar sinais de crise e emitir alerta."
