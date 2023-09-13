@@ -20,8 +20,8 @@ Description: "Um animal terapeuta não humano"
 * address.text = "Endereço do Dr. Romeu"
 * telecom.use = #work
 
-* qualification.code.coding.system = Canonical(animal-qualificacao)
+* qualification.code.coding.system = Canonical(QualificacaoAnimalTerapeuta)
 * qualification.code.coding.code = #alerta
 
 * extension[0].url = $at
-* extension[0].valueCodeableConcept = $animal-species#canislf "Dog"
+* extension[0].valueCodeableConcept = $sct#388445009

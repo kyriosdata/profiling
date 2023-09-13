@@ -8,5 +8,6 @@ Alias: $ca = http://www.gov.br/agricultura/ca
 Alias: $cat = http://crmv.org/cat
 
 Alias: $v2-0203 = http://terminology.hl7.org/CodeSystem/v2-0203
+Alias: $sct = http://snomed.info/sct
 
 
