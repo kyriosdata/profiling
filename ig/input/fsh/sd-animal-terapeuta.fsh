@@ -29,11 +29,17 @@ Description: "Animal não humano que contribui com assistência à saúde"
 // o foco na construção do Guia de Implementação.
 
 * identifier contains mapa 1..1 and crmv 1..
+* identifier ^short = "Identificadores do animal terapeuta"
 
 // (passo 3) Restringir o conteúdo do slice
 
 * identifier[mapa].system = $ca
 * identifier[crmv].system = $cat
+
+* identifier[mapa] ^short = "O identificador fornecido pelo MAPA"
+* identifier[crmv] ^short = "O identificador fornecido pelo CRMV"
+* identifier[mapa].system ^short = "O nome único do identificador gerado pelo MAPA"
+* identifier[crmv].system ^short = "O nome único do identificador gerado pelo CRMV"
 
 // P3
 * active 1..1
@@ -58,6 +64,7 @@ Description: "Animal não humano que contribui com assistência à saúde"
 
 // P8
 * photo 1..
+* photo ^short = "Imagem do animal terapeuta"
 
 // Elementos não incluídos no modelo de informação:
 // gender, birthDate e communication.
@@ -75,8 +82,11 @@ Description: "Animal não humano que contribui com assistência à saúde"
 * extension contains 
     $at named especie 1..1 MS
 
+* extension ^short = "Informação adicional exigida para animal terapeuta"
+
 * extension[especie] ^short = "A espécie do animal"
-* extension[especie].valueCodeableConcept from http://hl7.org/fhir/ValueSet/animal-species (required)
+* extension[especie].valueCodeableConcept from $vs-animal-species (required)
+* extension[especie].value[x] ^short = "O código que identifica a espécie do animal"
 
 // Invariante (restrição)
 

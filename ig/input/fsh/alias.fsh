@@ -2,6 +2,7 @@ Alias: $animal = http://hl7.org/fhir/StructureDefinition/patient-animal
 Alias: $animal-breed = http://example.org/fhir/CodeSystem/animal-breed
 Alias: $animal-genderstatus = http://hl7.org/fhir/animal-genderstatus
 Alias: $animal-species = http://hl7.org/fhir/animal-species
+Alias: $vs-animal-species = http://hl7.org/fhir/ValueSet/animal-species
 
 Alias: $at = http://hl7.org/fhir/StructureDefinition/practitioner-animalSpecies
 Alias: $ca = http://www.gov.br/agricultura/ca
