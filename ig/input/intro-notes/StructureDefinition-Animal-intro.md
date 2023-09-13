@@ -1,7 +1,4 @@
-### Informação introdutória
-
-Podem ser acrescentada para cada recurso.
-Deve ser depositada no diretório `input/intro-notes` e o nome
-deve seguir seguinte o exemplo `StructureDefinition-Animal-intro.md`,
-onde o nome do recurso, o nome do perfil (_profile_) e **intro** para indicar que é nota
-introdutória.
+Este parágrafo é o conteúdo do arquivo `StructureDefinition-animal-intro.md`
+depositada no diretório `input/intro-notes`. O nome do arquivo é dado
+pelo nome do recurso, seguido do identificador (id)
+seguido de `intro`, separados por hífen.
