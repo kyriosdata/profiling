@@ -35,18 +35,24 @@ Description: "Animal não humano que contribui com assistência à saúde"
 
 // P3
 * active 1..1
+* active ^short = "Indica se o presente registro está ativo"
 
 // P4
 * name 1..
+* name ^short = "O nome pelo qual o animal é conhecido"
 
 // P5
 * telecom 1.. 
+* telecom ^short = "Contato com quem está próximo, cuida ou responde pelo animal"
 
 // P6
 * address 1..
+* address ^short = "Endereço onde se localiza o animal"
 
 // P7
 * qualification 1..
+* qualification.code.coding from ValoresQualificacaoAnimalTerapeuta (required)
+* qualification ^short = "Identifica as capacidades do animal"
 
 // P8
 * photo 1..
@@ -65,4 +71,4 @@ Description: "Animal não humano que contribui com assistência à saúde"
 * communication 0..0
 
 * extension contains 
-    $at named terapeuta 1..1 MS
+    $at named especie 1..1 MS
