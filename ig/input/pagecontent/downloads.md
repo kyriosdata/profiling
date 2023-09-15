@@ -7,7 +7,7 @@ são disponibilizados por conveniência.
 O arquivo [package.tgz](package.tgz) contém as definições em
 formato reconhecido por um servidor FHIR.
 
-### Definições em vários formatos
+### Apenas as definições
 
 Também é possível baixar as definições além do formato NPM Package (acima):
 
@@ -25,3 +25,8 @@ Também é possível baixar as definições além do formato NPM Package (acima)
 
 Baixe o Guia de Implementação completo, todo ele, inclusive com os
 arquivos citados anteriormente [aqui](full-ig.zip).
+
+### Repositório github
+
+O presente guia é produzido a partir do repositório
+https://github.com/kyriosdata/profiling. 

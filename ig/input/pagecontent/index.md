@@ -1,7 +1,10 @@
 ### Cenário hipotético
 
-Este Guia de Implementação é proposto para um cenário hipotético e visa
+O presente guia é proposto para um cenário hipotético e visa
 orientar aqueles que desejam criar guias de implementação.
+
+Todo o conteúdo correspondente encontra-se disponível
+no github (https://github.com/kyriosdata/profiling).
 
 ### Problema
 
