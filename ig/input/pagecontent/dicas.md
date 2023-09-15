@@ -12,7 +12,7 @@ Ao final o conteúdo deve ser depositado em um arquivo como
 
 A publicação do presente guia foi realizada no registro
 https://fhir.org/guides/registry/. Para tal, conforme as 
-orientações em https://github.com/FHIR/ig-registry, foram realizados três passos.
+orientações em https://github.com/FHIR/ig-registry, foram realizados dois passos.
 
 Primeiro foi produzido o seguinte conteúdo, disponível no
 diretório **ig** do repositório empregado para criação 
@@ -41,4 +41,8 @@ do guia: https://github.com/kyriosdata/profiling.
   ]
 }```
 
-Para 
+Segundo e último. Requisitado o acréscimo desta informação via pull request,
+conforme [aqui](https://github.com/FHIR/ig-registry/pull/212#event-10378476168). Neste link também se observa que a requisição foi aprovada. 
+
+Após estes passos pode-se localizar o presente guia no registro
+
