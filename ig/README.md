@@ -10,6 +10,18 @@ facilitou a criação do Guia, que não teve que contemplar
 um contexto real, profissionais de saúde e outros especialistas
 necessários, mas não consultados.
 
+## Para fazer...
+
+- Nao ocorre carga correta do pacote conforme configurado abaixo em application.yml com
+```
+implementationguides:
+    ##    example from registry (packages.fhir.org)
+      animal:
+        packageUrl: https://kyriosdata.github.io/profiling/package.tgz
+        name: at
+        version: 0.1.1
+``` 
+
 ## Publicação usando github pages
 
 - Seja **ig** o diretório corrente
