@@ -7,4 +7,3 @@ Usage: #example
 * created = "2023-02-20"
 * paymentDate = "2023-02-20"
 * paymentAmount.value = 30.34
-* paymentAmount.currency = #BRL
