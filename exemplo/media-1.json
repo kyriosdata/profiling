@@ -1,0 +1,10 @@
+{
+  "resourceType": "Media",
+  "status": "in-progress",
+  "content": { "url": "http://portais-de-gatos.com/x" },
+  "issued": "2023-09-26T20:02:43+00:00",
+  "text": {
+    "status": "empty",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">empty</div>"
+  }
+}
