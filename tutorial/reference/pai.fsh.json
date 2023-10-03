@@ -1,0 +1,7 @@
+{
+    "resourceType": "RelatedPerson",
+    "id": "pai",
+    "patient": {
+      "reference": "Patient/filho"
+    }
+  }
