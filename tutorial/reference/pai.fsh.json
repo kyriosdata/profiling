@@ -1,7 +1,22 @@
 {
-    "resourceType": "RelatedPerson",
-    "id": "pai",
-    "patient": {
-      "reference": "Patient/filho"
+  "resourceType": "RelatedPerson",
+  "id": "pai",
+  "text": {
+    "status": "empty",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">empty</div>"
+  },
+  "patient": {
+    "reference": "Patient/filho"
+  },
+  "relationship": [
+    {
+      "text": "o pai",
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code": "FTH"
+        }
+      ]
     }
-  }
+  ]
+}
