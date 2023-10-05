@@ -1,0 +1,14 @@
+{
+  "resourceType": "Patient",
+  "id": "PacienteComPassaporte",
+  "text": {
+    "status": "empty",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Ilustra Identifier</div>"
+  },
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/sid/passport-BRA",
+      "value": "CS265436"
+    }
+  ]
+}
