@@ -11,9 +11,10 @@ InstanceOf: Patient
 * text.status = #empty
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Ilustra Identifier</div>"
 
+* name.given = "Flávio"
+
 * identifier.system = "http://hl7.org/fhir/sid/passport-BRA"
 * identifier.value = "CS265436"
-
 ```
 
 Versão em JSON (arquivo _paciente-passaporte.fsh.json_)
@@ -26,6 +27,11 @@ Versão em JSON (arquivo _paciente-passaporte.fsh.json_)
     "status": "empty",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Ilustra Identifier</div>"
   },
+  "name": [
+    {
+      "given": ["Flávio"]
+    }
+  ],
   "identifier": [
     {
       "system": "http://hl7.org/fhir/sid/passport-BRA",
