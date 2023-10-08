@@ -1,6 +1,5 @@
 # Referências
 
-
 ## Paciente
 
 Arquivo _filho.fsh_:

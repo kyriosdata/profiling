@@ -1,0 +1,23 @@
+{
+  "resourceType": "Patient",
+  "id": "PacienteComPassaporte",
+  "meta": {
+    "profile": [
+      "http://tipo.com/PacienteComPassaporte"
+    ]
+  },
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PPN"
+          }
+        ]
+      },
+      "system": "http://hl7.org/fhir/sid/passport-BRA",
+      "value": "CS265436"
+    }
+  ]
+}
