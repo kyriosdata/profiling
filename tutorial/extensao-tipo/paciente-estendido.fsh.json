@@ -1,0 +1,27 @@
+{
+  "resourceType": "Patient",
+  "id": "PacienteTipoComId",
+  "communication": [
+    {
+      "language": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+            "valueCode": "not-asked"
+          }
+        ]
+      }
+    }
+  ],
+  "_active": {
+    "id": "teste"
+  },
+  "_multipleBirthBoolean": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+        "valueCode": "asked-unknown"
+      }
+    ]
+  }
+}
