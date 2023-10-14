@@ -1,0 +1,9 @@
+{
+  "resourceType": "Patient",
+  "id": "PacienteInvalido",
+  "meta": {
+    "profile": [
+      "http://example.org/StructureDefinition/PacienteComunicacaoDefinida"
+    ]
+  }
+}

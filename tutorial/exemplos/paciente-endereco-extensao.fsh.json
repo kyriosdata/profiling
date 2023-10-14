@@ -1,0 +1,23 @@
+{
+  "resourceType": "Patient",
+  "id": "PacienteComEnderecoComExtensao",
+  "address": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/geolocation",
+          "extension": [
+            {
+              "url": "latitude",
+              "valueDecimal": 2
+            },
+            {
+              "url": "longitude",
+              "valueDecimal": 45
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
