@@ -1,6 +1,7 @@
 Instance: PacienteComEnderecoComExtensao
 InstanceOf: Patient
 Usage: #example
+
 * address.extension[0].url = "http://hl7.org/fhir/StructureDefinition/geolocation"
 * address.extension[0].extension[0].url = "latitude"
 * address.extension[0].extension[0].valueDecimal = 2
