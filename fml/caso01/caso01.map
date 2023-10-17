@@ -1,10 +1,15 @@
 /// url = 'http://perfil.com/StructureMap/MeuPrimeiroExemplo'
-/// name = 'caso01'
 /// title = 'Primeiro exemplo (fml -> StructureMap)'
+/// name = "caso01"
+/// status = "draft"
+/// version = "0.1"
 
-uses "http://hl7.org/fhir/StructureDefinition/Binary" alias entrada as source
+//map "http://perfil.com/StructureMap/MeuPrimeiroExemplo" = "MeuPrimeiroExemplo"
+
+uses "http://hl7.org/fhir/StructureDefinition/Patient" alias entrada as source
 uses "http://hl7.org/fhir/StructureDefinition/Binary" alias saida as target
 
-group tutorial(source in : entrada, target out : saida) {
-    src.contentType as a -> tgt.contentType = a "Cópia";
+group tutorial(source src : entrada, target out : saida) {
+    src.id as a -> out.contentType = a;
 }
+  
