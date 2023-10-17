@@ -1,2 +1,2 @@
-java -jar %validador% -ig caso01.map -compile http://perfil.com/StructureMap/MeuPrimeiroExemplo -version 5.0.0 -output fml.json -tx n/a
-java -jar %validador% paciente.json -transform http://perfil.com/StructureMap/MeuPrimeiroExemplo -version 5.0.0 -ig fml.json -output transformado.json -tx https://r4.ontoserver.csiro.au/fhir
+java -jar %validador% -ig caso01.map -compile http://perfil.com/StructureMap/IdToContentType -version 5.0.0 -output fml.json -tx n/a
+java -jar %validador% paciente.json -transform http://perfil.com/StructureMap/IdToContentType -version 5.0.0 -ig fml.json -output transformado.json -tx https://r4.ontoserver.csiro.au/fhir

@@ -1,10 +1,10 @@
-/// url = 'http://perfil.com/StructureMap/MeuPrimeiroExemplo'
-/// title = 'Primeiro exemplo (fml -> StructureMap)'
+/// url = 'http://perfil.com/StructureMap/IdToContentType'
+/// title = 'Converte id para contentType'
 /// name = "caso01"
 /// status = "draft"
 /// version = "0.1"
 
-//map "http://perfil.com/StructureMap/MeuPrimeiroExemplo" = "MeuPrimeiroExemplo"
+//map "http://perfil.com/StructureMap/IdToContentType" = "IdToContentType"
 
 uses "http://hl7.org/fhir/StructureDefinition/Patient" alias entrada as source
 uses "http://hl7.org/fhir/StructureDefinition/Binary" alias saida as target
