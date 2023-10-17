@@ -3,21 +3,41 @@
 O identificador lógico da instância de Patient será empregado como
 o valor do elemento contentType da instância de Binary gerada.
 
-A instância de Patient:
+Para a instância de Patient
 
 ```json
 {
   "resourceType": "Patient",
-  "id": "identificador-logico"
+  "id": "identificador-logico",
+  "active": true
 }
 ```
 
-A instância de Binary a ser gerada:
+A instância de Binary a ser gerada será
 
 ```json
 {
   "resourceType": "Binary",
-  "contentType": "identificador-logico"
+  "contentType": "text/plain"
+}
+```
+
+Contudo, ao alternar o elemento active para false
+
+```json
+{
+  "resourceType": "Patient",
+  "id": "identificador-logico",
+  "active": false
+}
+```
+
+A instância de Binary a ser gerada será
+
+```json
+{
+  "resourceType": "Binary",
+  "data": "QSB2aWRhIMOpIGJlbGEh"
 }
 ```
 
