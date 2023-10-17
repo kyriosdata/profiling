@@ -1,0 +1,20 @@
+/// url = 'http://perfil.com/StructureMap/AtribuiCondicional'
+/// title = "Atribui apenas condicionalmente"
+/// name = "caso02"
+/// status = "draft"
+/// version = "0.1"
+
+//map "http://perfil.com/StructureMap/AtribuiCondicional" = "AtribuiCondicional"
+
+uses "http://hl7.org/fhir/StructureDefinition/Patient" alias entrada as source
+uses "http://hl7.org/fhir/StructureDefinition/Binary" alias saida as target
+
+group atribuiComCondicao(source src : entrada, target out : saida) {
+
+    // se registro do paciente está ativo, então atribua contentType
+    src.active as a where src.active = true -> out.contentType = "text/plain";
+
+    // se o registro do paciente NÃO está ativo, define data
+    src.active as a where src.active.not() -> out.data = "QSB2aWRhIMOpIGJlbGEh";
+}
+  
