@@ -1,0 +1,10 @@
+/// url = 'http://perfil.com/StructureMap/MeuPrimeiroExemplo'
+/// name = 'caso01'
+/// title = 'Primeiro exemplo (fml -> StructureMap)'
+
+uses "http://perfil.com/entrada" alias entrada as source
+uses "http://perfil.com/saida" alias saida as target
+
+group tutorial(source in : entrada, target out : saida) {
+    in.a as a -> out.a = a "rule_a";
+}
