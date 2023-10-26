@@ -6,11 +6,12 @@ Description: "Não satisfaz perfil"
 
 * meta.profile[0] = "http://perfil.com/paciente-total"
 
+// Uma extensão não obrigatória, mas incluída
+
 * extension[0].url = "http://hl7.org/fhir/StructureDefinition/patient-congregation"
 * extension[0].valueString = "qualquer coisa"
 
-// * extension[0].url = "http://perfil.com/total-irmaos"
-// * extension[0].valueUnsignedInt = 1
+// Uma extensão exigida pelo perfil
 
 * extension[1].url = "http://perfil.com/total-irmaos"
 * extension[1].valueUnsignedInt = 1
