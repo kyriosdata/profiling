@@ -1,4 +1,4 @@
-Instance: PacienteSemTotal
+Instance: paciente-sem-total
 InstanceOf: Patient
 Usage: #example
 Title: "Paciente Sem Total"
