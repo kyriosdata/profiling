@@ -1,0 +1,17 @@
+{
+    "resourceType": "Patient",
+    "id": "Daniel",
+    "meta": {
+      "profile": [
+        "http://perfil.com/EstadoCivil"
+      ]
+    },
+    "maritalStatus": {
+      "coding": [
+        {
+          "system": "http://tipo.com/EstadoCivil",
+          "code": "D"
+        }
+      ]
+    }
+}
