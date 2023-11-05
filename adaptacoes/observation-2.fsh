@@ -1,4 +1,4 @@
-Instance: observation-12
+Instance: observation-2
 InstanceOf: Observation
 Usage: #example
 
