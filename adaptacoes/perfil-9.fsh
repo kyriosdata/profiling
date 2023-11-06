@@ -1,16 +1,13 @@
-Profile: HomemIdoso
+Profile: GeracaoZ
 Parent: Patient
 Id: perfil-9
-
-* ^url = "http://perfil.com/homem-idoso"
-* ^status = #active
-
+* ^url = "http://perfil.com/geracao-z"
 * ^text.status = #empty
 * ^text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>empty</div>" 
+* ^status = #draft
+* obeys date-invariant
 
-* obeys homem-idoso
-
-Invariant: homem-idoso
-Description: "Homem com pelo menos 60 anos de idade"
-Severity: #error
-Expression: "(today() - 60 years > birthDate) and gender = 'male'"
+Invariant: date-invariant
+Description: "Entre 1995 e 2010 (geração Z)"
+Severity: #warning
+Expression: "birthDate > @1995 and birthDate < @2010"
