@@ -3,6 +3,8 @@ Id: perfil-12
 Parent: Observation
 * ^url = "http://perfil.com/pressao-sanguinea"
 * ^status = #draft
+* ^text.status = #empty
+* ^text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>empty</div>"
 * code = http://loinc.org#85354-9
 * code MS
 * component MS
