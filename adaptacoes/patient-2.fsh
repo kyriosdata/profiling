@@ -1,3 +1,6 @@
+Alias: $org1 = https://cnes.br/Organization/organization-1
+Alias: $org2 = https://cnes.br/Organization/organization-2
+
 Instance: patient-2
 InstanceOf: Patient
 Usage: #example
@@ -9,29 +12,29 @@ Description: "Uma instância para ambientação com FSH"
 
 // Um identificador de negócio: CNH provisória (#temp)
 
-* identifier[0].use = #temp
-* identifier[0].type.coding[0]
-  * system = "http://terminology.hl7.org/CodeSystem/v2-0203"
-  * code = #DL
-* identifier[0].type.text = "CNH"
-* identifier[0].system = "http://brasil.gov/CNH"
-* identifier[0].value = "987"
-* identifier.assigner.reference = "Organization/organization-3"
-* identifier.assigner.type = "Organization"
-* identifier.assigner.display = "DETRAN de Goiás"
+* identifier[0]
+  * use = #temp
+  * type.coding[0].system = "http://terminology.hl7.org/CodeSystem/v2-0203"
+  * type.coding[0].code = #DL
+  * type.text = "CNH"
+  * system = "http://brasil.gov/CNH"
+  * value = "987"
+  * assigner.reference = "Organization/organization-3"
+  * assigner.type = "Organization"
+  * assigner.display = "DETRAN de Goiás"
 
 // Outro identificador de negócio: CPF
 
-* identifier[1].use = #official
-* identifier[1].type.coding[0]
-  * system = "http://terminology.hl7.org/CodeSystem/v2-0203"
-  * code = #TAX
-* identifier[0].type.text = "CPF"
-* identifier[1].system = "http://brasil.gov/CPF"
-* identifier[1].value = "122.333.322/99"
-* identifier.assigner.reference = "Organization/organization-4"
-* identifier.assigner.type = "Organization"
-* identifier.assigner.display = "Receita Federal do Brasil"
+* identifier[1]
+  * use = #official
+  * type.coding[0].system = "http://terminology.hl7.org/CodeSystem/v2-0203"
+  * type.coding[0].code = #TAX
+  * type.text = "CPF"
+  * system = "http://brasil.gov/CPF"
+  * value = "122.333.322/99"
+  * assigner.reference = "Organization/organization-4"
+  * assigner.type = "Organization"
+  * assigner.display = "Receita Federal do Brasil"
 
 * active = true
 
@@ -57,10 +60,10 @@ Description: "Uma instância para ambientação com FSH"
 * telecom[0].period.start = "2022"
 * telecom[0].period.end = "2023-11-28"
 
-* telecom[0].system = #phone
-* telecom[0].value = "62 98765-4321"
-* telecom[0].use = #home
-* telecom[0].rank = 1
+* telecom[1].system = #phone
+* telecom[1].value = "62 98765-4321"
+* telecom[1].use = #home
+* telecom[1].rank = 1
 
 * gender = #female
 * birthDate = "2000-11-21"
@@ -98,16 +101,16 @@ Description: "Uma instância para ambientação com FSH"
 
 * multipleBirthBoolean = false
 
-* photo[0].contentType = #image/jpg
-* photo[0].language = #pt-BR
-* photo[0].url = "https://acesse.dev/1WUDf"
-* photo[0].size = 68810
+* photo[0]
+  * contentType = #image/jpg
+  * language = #pt-BR
+  * url = "https://acesse.dev/1WUDf"
+  * size = 68810
 
-// Calculado o hash (SHA-1) com certutil
-// resultado foi codificado na base64 resultando no que segue
-* photo[0].hash = "YmViYjAxZjMxZTJmNmE5NzBjYTRhYjM5YjNiN2JjYzZmNmY4NzRiNw=="
-* photo[0].title = "Lismary no trabalho"
-* photo[0].creation = "2022-02-22"
+    // Hash (SHA-1) com certutil codificado na base64
+  * hash = "YmViYjAxZjMxZTJmNmE5NzBjYTRhYjM5YjNiN2JjYzZmNmY4NzRiNw=="
+  * title = "Lismary no trabalho"
+  * creation = "2022-02-22"
 
 * contact[0].relationship.coding[0]
   * system = "http://terminology.hl7.org/CodeSystem/v2-0131"
@@ -118,12 +121,12 @@ Description: "Uma instância para ambientação com FSH"
 * communication[0].language.coding[0]
   * system = "urn:ietf:bcp:47"
   * code = #pt-BR
-* communication[1].preferred = true
+* communication[0].preferred = true
 
 * communication[1].language.coding[0]
   * system = "urn:ietf:bcp:47"
   * code = #fr
 * communication[1].preferred = false
 
-* generalPractitioner[0].reference = "https://cnes.br/Organization/organization-2"
-* managingOrganization.reference = "https://cnes.br/Organization/organization-1"
+* generalPractitioner[0].reference = $org2
+* managingOrganization.reference = $org1
