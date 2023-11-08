@@ -18,7 +18,7 @@ Title: "Paciente que inclui total de irmãos"
 * ^text.status = #empty
 * ^text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>empty</div>"
 
-// Slicing
+// Slicing que obriga presença da extensão
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
