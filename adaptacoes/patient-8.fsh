@@ -8,8 +8,9 @@ Usage: #example
 * text.status = #empty
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>empty</div>"
 
-* extension[0].url = "http://perfil.com/total-irmaos"
-* extension[0].valuePositiveInt = 6
+* extension[0].url = $m
+* extension[0].valueString = "Nome da mãe do paciente aqui"
 
-* extension[1].url = $m
-* extension[1].valueString = "Nome da mãe do paciente aqui"
+* extension[1].url = "http://perfil.com/total-irmaos"
+* extension[1].valuePositiveInt = 6
+
