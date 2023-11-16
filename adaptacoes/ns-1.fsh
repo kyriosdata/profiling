@@ -1,13 +1,12 @@
 Instance: ns-1
 InstanceOf: NamingSystem
 
-
 * text.status = #empty
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>empty</div>"
 
 * name = "ProtocoloSiscan"
 * status = #active
-* kind = #identifier
+* kind = #identifier // IDENTIFICADOR DE NEGÓCIO
 * date = "2023-07-31T14:24:34.711Z"
 * uniqueId[0].type = #other
 * uniqueId[0].value = "SISCAN"
