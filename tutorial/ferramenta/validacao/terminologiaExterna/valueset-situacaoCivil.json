@@ -1,0 +1,28 @@
+{
+  "resourceType": "ValueSet",
+  "name": "SituacoesCivis",
+  "id": "SituacoesCivis",
+  "status": "draft",
+  "url": "http://valuesets.com/SituacoesCivis",
+  "compose": {
+    "include": [
+      {
+        "system": "http://tipo.com/EstadoCivil",
+        "concept": [
+          {
+            "code": "C"
+          },
+          {
+            "code": "S"
+          },
+          {
+            "code": "U"
+          },
+          {
+            "code": "D"
+          }
+        ]
+      }
+    ]
+  }
+}

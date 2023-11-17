@@ -1,0 +1,9 @@
+{
+    "resourceType": "Patient",
+    "id": "Joaozinho",
+    "meta": {
+      "profile": [
+        "https://exemplo.com/PacienteHomem"
+      ]
+    }
+  }
