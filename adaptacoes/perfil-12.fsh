@@ -8,8 +8,8 @@ Parent: Observation
 * code = http://loinc.org#85354-9
 * code MS
 * component MS
-* component ^slicing.discriminator.type = #pattern
-* component ^slicing.discriminator.path = "code"
+* component ^slicing.discriminator[0].type = #pattern
+* component ^slicing.discriminator[0].path = "code.coding.system"
 * component ^slicing.ordered = false
 * component ^slicing.rules = #open
 * component contains

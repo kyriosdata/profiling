@@ -7,5 +7,5 @@ Id: perfil-16
 * ^text.status = #empty
 * ^text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>empty</div>"
 
-* version from http://hl7.org/fhir/ValueSet/FHIR-version
+* version from urn:oid:2.16.840.1.113883.4.642.4.1310 (required)
 * version 1..1
