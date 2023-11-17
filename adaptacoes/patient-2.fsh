@@ -4,15 +4,13 @@ Alias: $org2 = https://cnes.br/Organization/organization-2
 Instance: patient-2
 InstanceOf: Patient
 Usage: #example
-Title: "Ilustra instância de recurso"
 Description: "Uma instância para ambientação com FSH"
 
+* active = true
 * text.status = #empty
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>empty</div>"
 
-// Um identificador de negócio: CNH provisória (#temp)
-
-* identifier[0]
+* identifier[0]  // CNH provisória (#temp)
   * use = #temp
   * type.coding[0].system = "http://terminology.hl7.org/CodeSystem/v2-0203"
   * type.coding[0].code = #DL
@@ -23,9 +21,7 @@ Description: "Uma instância para ambientação com FSH"
   * assigner.type = "Organization"
   * assigner.display = "DETRAN de Goiás"
 
-// Outro identificador de negócio: CPF
-
-* identifier[1]
+* identifier[1] // CPF
   * use = #official
   * type.coding[0].system = "http://terminology.hl7.org/CodeSystem/v2-0203"
   * type.coding[0].code = #TAX
@@ -35,8 +31,6 @@ Description: "Uma instância para ambientação com FSH"
   * assigner.reference = "Organization/organization-4"
   * assigner.type = "Organization"
   * assigner.display = "Receita Federal do Brasil"
-
-* active = true
 
 * name[0].use = #official
 * name[0].text = "Senhora Lis Maria Silva Filha"
@@ -51,16 +45,14 @@ Description: "Uma instância para ambientação com FSH"
 * name[1].use = #nickname
 * name[1].text = "Lismary"
 
-// Formas de contato
-
-* telecom[0].system = #email
+* telecom[0].system = #email  // Contato por email
 * telecom[0].value = "lismary@servidor.talvez.com"
 * telecom[0].use = #work
 * telecom[0].rank = 2
 * telecom[0].period.start = "2022"
 * telecom[0].period.end = "2023-11-28"
 
-* telecom[1].system = #phone
+* telecom[1].system = #phone  // Contato por telefone
 * telecom[1].value = "62 98765-4321"
 * telecom[1].use = #home
 * telecom[1].rank = 1
@@ -69,9 +61,7 @@ Description: "Uma instância para ambientação com FSH"
 * birthDate = "2000-11-21"
 * deceasedBoolean = false
 
-// Residência em avenida mundialmente conhecida
-
-* address[0].use = #home
+* address[0].use = #home  // Residência
 * address[0].type = #both
 * address[0].text = "Endereço completo aqui"
 * address[0].line = "Avenida Princess Grace"
@@ -82,9 +72,7 @@ Description: "Uma instância para ambientação com FSH"
 * address[0].country = "MC"
 * address[0].period.start = "2023-10-27"
 
-// Endereço de trabalho em Anápolis
-
-* address[1].use = #work
+* address[1].use = #work  // Endereço do trabalho
 * address[1].type = #both
 * address[1].line = "Avenida Brasil, 456"
 * address[1].city = "Anápolis"
