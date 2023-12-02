@@ -9,12 +9,6 @@ Description: "Protocolo para definir o nível de prioridade nos atendimentos do 
 * ^text.status = #empty
 * ^text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>empty</div>"
 
-* ^url = "http://perfil.org/vs/manchester-cor"
+* ^url = "http://perfil.org/vs-manchester-cor"
 
-// * include codes from system $manchester-cor
-
-* $manchester-cor#vermelho
-* $manchester-cor#laranja
-* $manchester-cor#amarelo
-* $manchester-cor#verde
-* $manchester-cor#azul
+* include codes from system $manchester-cor

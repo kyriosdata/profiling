@@ -5,14 +5,10 @@ Id: vs-manchester-texto
 Title: "Protocolo Manchester definido por manchester"
 Description: "Protocolo para definir o nível de prioridade nos atendimentos do serviço de emergência"
 
-* ^url = "http://perfil.org/vs/manchester-texto"
+* ^url = "http://perfil.org/vs-manchester-texto"
 
 * ^status = #draft
 * ^text.status = #empty
 * ^text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>empty</div>"
 
-* $manchester#emergencia
-* $manchester#muito-urgente
-* $manchester#urgente
-* $manchester#pouco-urgente
-* $manchester#nao-urgente
+* include codes from system $manchester

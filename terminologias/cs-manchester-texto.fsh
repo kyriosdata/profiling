@@ -12,6 +12,7 @@ Description: "Texto para identificação de prioridades definidas pelo Protocolo
 * ^content = #complete
 * ^count = 5
 * ^caseSensitive = true
+* ^experimental = false
 
 * #emergencia "Emergência"
 * #muito-urgente "Muito urgente"

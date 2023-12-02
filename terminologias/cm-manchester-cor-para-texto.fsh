@@ -11,8 +11,8 @@ Usage: #definition
 
 * experimental = true
 * description = "Mapeamento de cor para texto correspondente para as prioridades do Protocolo de Manchester"
-* sourceUri = "http://perfil.org/vs/manchester-cor"
-* targetUri = "http://perfil.org/vs/manchester-texto"
+* sourceUri = "http://perfil.org/vs-manchester-cor"
+* targetUri = "http://perfil.org/vs-manchester-texto"
 * group.source = "http://perfil.org/manchester-cor"
 * group.target = "http://perfil.org/manchester-texto"
 * group.element[0].code = #vermelho

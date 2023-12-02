@@ -11,6 +11,7 @@ Description: "Cor para identificação de prioridades definidas pelo Protocolo d
 * ^url = "http://perfil.org/manchester-cor"
 * ^count = 5
 * ^caseSensitive = true
+* ^experimental = false
 
 * #vermelho "Prioridade máxima" "Paciente tem risco de morte ou está em condição de gravidade extrema e que precisa de atendimento"
 * #laranja "Prioridade alta" "Paciente em caso urgente, com tempo de espera de, no máximo, 10 minutos"
