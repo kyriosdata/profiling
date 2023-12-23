@@ -1,7 +1,11 @@
 ## Ilustra uso de ConceptMap
 
 Mapeamento de cores para categorias de urgência de atendimento, por exemplo,
-cor vermelha é mapeada para emergência, conforme o Protocolo de Manchester.
+cor vermelha é mapeada para "emergência", conforme o Protocolo de Manchester.
+
+> **IMPORTANTE**. Os artefatos foram produzidos com foco no uso e
+ambientação com o padrão FHIR, nenhum profissional de saúde ou
+organização competente validou ou fez qualquer análise correspondente.
 
 ## Protocolo de Manchester
 
