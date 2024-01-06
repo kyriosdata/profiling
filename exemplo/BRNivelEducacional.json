@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "BRNivelEducacional",
   "url": "http://rnds-fhir.saude.gov.br/ValueSet/BRNivelEducacional",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "name": "BRNivelEducacional",
   "title": "Nível educacional",
   "status": "draft",
