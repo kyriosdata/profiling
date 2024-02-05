@@ -1,6 +1,6 @@
 Alias: $v2-0074 = http://terminology.hl7.org/CodeSystem/v2-0074
 Alias: $loinc = http://loinc.org
-
+Alias: $lipidprofile = http://hl7.org/fhir/StructureDefinition/lipidprofile
 
 Instance: lipids
 InstanceOf: Bundle
@@ -12,69 +12,75 @@ Usage: #example
 * entry[=].resource = cholesterol
 * entry[+].fullUrl = "https://example.com/base/Observation/triglyceride"
 * entry[=].resource = triglyceride
-* entry[+].fullUrl = "https://example.com/base/Observation/EstranhoExemplo"
-* entry[=].resource = EstranhoExemplo
-
+* entry[+].fullUrl = "https://example.com/base/Observation/hdlcholesterol"
+* entry[=].resource = hdlcholesterol
+* entry[+].fullUrl = "https://example.com/base/Observation/ldlcholesterol"
+* entry[=].resource = ldlcholesterol
 
 Instance: Inline-Instance-for-lipids-1
-InstanceOf: DiagnosticReport
+InstanceOf: $lipidprofile
 Usage: #inline
-* meta.profile[0] = "https://fhir.fabrica.inf.ufg.br/ccu/StructureDefinition/lipidprofile"
 * id = "lipids"
-* identifier.system = "https://servidor.com/ns/lab"
+* identifier.system = "http://servidor.com/ns/lab"
 * identifier.value = "5234342"
 * status = #final
 * category = $v2-0074#HM
 * code = $loinc#57698-3 "Lipid panel with direct LDL - Serum or Plasma"
-* subject = Reference(rosa)
+* code.text = "Lipid Panel"
+* subject.reference = "Patient/pat2"
 * effectiveDateTime = "2011-03-04T08:30:00+11:00"
 * issued = "2013-01-27T11:45:33+11:00"
-* performer = Reference(laboratorio)
-* result[0] = Reference(cholesterol)
-* result[1] = Reference(triglyceride)
-* result[2] = Reference(EstranhoExemplo)
-
+* performer.reference = "Organization/1832473e-2fe0-452d-abe9-3cdb9879522f"
+* performer.display = "Acme Laboratory, Inc"
+* result[0].id = "1"
+* result[=].reference = "Observation/cholesterol"
+* result[+].id = "2"
+* result[=].reference = "Observation/triglyceride"
+* result[+].id = "3"
+* result[=].reference = "Observation/hdlcholesterol"
+* result[+].id = "4"
+* result[=].reference = "Observation/ldlcholesterol"
 
 Instance: cholesterol
 InstanceOf: Observation
 Usage: #inline
-* meta.profile[0] = "https://fhir.fabrica.inf.ufg.br/ccu/StructureDefinition/motivo-rejeicao"
 * status = #final
-* code = $loinc#35200-5
-* subject = Reference(rosa)
-* performer = Reference(Organization/laboratorio)
-* valueBoolean = true
+* code = $loinc#35200-5 "Cholesterol [Moles/volume] in Serum or Plasma"
+* code.text = "Cholesterol"
+* subject = Reference(Patient/pat2)
+* performer = Reference(Organization/1832473e-2fe0-452d-abe9-3cdb9879522f) "Acme Laboratory, Inc"
+* valueQuantity = 6.3 'mmol/L' "mmol/L"
+* referenceRange.high = 4.5 'mmol/L' "mmol/L"
 
 Instance: triglyceride
 InstanceOf: Observation
 Usage: #inline
-* meta.profile[0] = "https://fhir.fabrica.inf.ufg.br/ccu/StructureDefinition/laudo-epitelios"
 * status = #final
-* code = $loinc#35217-9 
-* subject = Reference(rosa)
-* performer = Reference(laboratorio)
-* valueInteger = 10
+* code = $loinc#35217-9 "Triglyceride [Moles/volume] in Serum or Plasma"
+* code.text = "Triglyceride"
+* subject = Reference(Patient/pat2)
+* performer = Reference(Organization/1832473e-2fe0-452d-abe9-3cdb9879522f) "Acme Laboratory, Inc"
+* valueQuantity = 1.3 'mmol/L' "mmol/L"
+* referenceRange.high = 2 'mmol/L' "mmol/L"
 
-Instance: EstranhoExemplo
+Instance: hdlcholesterol
 InstanceOf: Observation
 Usage: #inline
-* meta.profile[0] = "https://fhir.fabrica.inf.ufg.br/ccu/StructureDefinition/estranho-perfil"
 * status = #final
-* code = $loinc#2085-9 
-* subject = Reference(rosa)
-* performer = Reference(laboratorio)
-* valueString = "ok, string"
+* code = $loinc#2085-9 "HDL Cholesterol"
+* code.text = "Cholesterol in HDL"
+* subject = Reference(Patient/pat2)
+* performer = Reference(Organization/1832473e-2fe0-452d-abe9-3cdb9879522f) "Acme Laboratory, Inc"
+* valueQuantity = 1.3 'mmol/L' "mmol/L"
+* referenceRange.low = 1.5 'mmol/L' "mmol/L"
 
-Instance: rosa
-InstanceOf: Patient
-Usage: #example
-Title: "rosa"
-Description: "um exemplo"
-* active = true
-
-Instance: laboratorio
-InstanceOf: Organization
-Usage: #example
-Title: "laboratorio"
-Description: "lab"
-* name = "lab"
+Instance: ldlcholesterol
+InstanceOf: Observation
+Usage: #inline
+* status = #final
+* code = $loinc#13457-7 "Cholesterol in LDL [Mass/volume] in Serum or Plasma by calculation"
+* code.text = "LDL Chol. (Calc)"
+* subject = Reference(Patient/pat2)
+* performer = Reference(Organization/1832473e-2fe0-452d-abe9-3cdb9879522f) "Acme Laboratory, Inc"
+* valueQuantity = 4.6 'mmol/L' "mmol/L"
+* referenceRange.high = 3 'mmol/L' "mmol/L"

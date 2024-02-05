@@ -1,6 +1,5 @@
 Alias: $loinc = http://loinc.org
 
-
 Profile: DiagnosticReportLipidProfile
 Parent: DiagnosticReport
 Id: lipidprofile
