@@ -11,6 +11,6 @@ Usage: #example
 
 * performer = Reference(Practitioner/1)
 * subject = Reference(Patient/1)
-* effectiveDateTime = "2023"
+* effectiveDateTime = "2023-01-12"
 
 

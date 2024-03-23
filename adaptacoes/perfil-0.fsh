@@ -1,7 +1,7 @@
 Profile: PerfilMinimo
 Parent: Patient	
 Id: perfil-0
-Title: "Pensado para ser adaptado (especializado)"
+Title: "Mínimo (nenhuma restrição definida)"
 
 // Narrativa (boa prática)
 * ^text.status = #empty
