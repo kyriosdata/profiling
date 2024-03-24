@@ -11,11 +11,11 @@ Description: "Um paciente e o estabelecimento guardião"
 * managingOrganization.reference = "Organization/UBS"
 
 
-Instance: PacitenteEstabelecimentoUrlRelativa
+Instance: PacitenteEstabelecimentoUrlAbsoluta
 InstanceOf: Patient
 Description: "Um paciente e o estabelecimento guardião"
 
-* managingOrganization.reference = "Organization/UBS"
+* managingOrganization.reference = "https://s.com/Organization/UBS"
 
 
 Instance: PacienteEstabelecimentoDisplay
