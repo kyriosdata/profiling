@@ -3,7 +3,7 @@ InstanceOf: PaymentNotice
 Usage: #example
 * status = #active
 * created = "2023-02-20"
-* payment = Reference(Pagamento)
-* recipient = Reference(laboratorio)
+* payment = Reference(PaymentReconciliation/Pagamento)
+* recipient = Reference(Organization/laboratorio)
 * amount.value = 540.34
 * amount.currency = #BRL
