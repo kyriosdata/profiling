@@ -2,8 +2,9 @@
   "resourceType": "StructureDefinition",
   "id": "dia-contato",
   "url": "http://example.org/StructureDefinition/dia-contato",
-  "name": "dia-contato",
+  "name": "DiaContato",
   "title": "Dia Contato",
+  "status": "draft",
   "description": "Dia da semana preferencial para tentativa de acesso ao contato.",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",
@@ -11,7 +12,7 @@
   "context": [
     {
       "type": "element",
-      "expression": "Element"
+      "expression": "Patient"
     }
   ],
   "type": "Extension",
