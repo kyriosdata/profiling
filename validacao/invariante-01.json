@@ -1,0 +1,8 @@
+{
+  "resourceType": "Patient",
+  "contact" : [
+    {
+      "gender" : "male"
+    }
+  ]
+}

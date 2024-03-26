@@ -1,0 +1,6 @@
+{
+  "resourceType": "Account",
+  "id": "cardinalidade-01",
+  "name": true,
+  "status" : "invalido"
+}
