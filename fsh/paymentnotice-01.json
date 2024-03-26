@@ -12,9 +12,5 @@
   "amount": {
     "value": 540.34,
     "currency": "BRL"
-  },
-  "text": {
-    "status": "empty",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Narrativa</div>"
   }
 }

@@ -12,7 +12,7 @@
   "context": [
     {
       "type": "element",
-      "expression": "Patient"
+      "expression": "Patient.contact"
     }
   ],
   "type": "Extension",

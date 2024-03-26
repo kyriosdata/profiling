@@ -7,5 +7,11 @@
     {
       "text": "Equipe formada por profissionais _próximos_ da **Dona Rosa** por já terem oferecido assistência anterior."
     }
-  ]
+  ],
+  "subject": {
+    "identifier": {
+      "system": "http://brasi.gov/cnh",
+      "value": "123.456"
+    }
+  }
 }
