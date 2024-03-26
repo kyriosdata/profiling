@@ -1,0 +1,14 @@
+{
+    "resourceType": "Questionnaire",
+    "id": "UmaUnicaPergunta",
+    "url": "http://example.org/Questionnaire/UmaUnicaPergunta",
+    "status": "draft",
+    "title": "Pergunta para ilustrar questionário",
+    "item": [
+      {
+        "linkId": "Q1",
+        "text": "Você é maior de idade?",
+        "type": "boolean"
+      }
+    ]
+}

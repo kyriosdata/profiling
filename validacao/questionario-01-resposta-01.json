@@ -1,0 +1,19 @@
+{
+    "resourceType": "QuestionnaireResponse",
+    "id": "Resposta",
+    "questionnaire": "http://example.org/Questionnaire/UmaUnicaPergunta",
+    "subject": {
+      "reference": "Patient/123456"
+    },
+    "status": "completed",
+    "item": [
+      {
+        "linkId": "Q1",
+        "answer": [
+          {
+            "valueBoolean": true
+          }
+        ]
+      }
+    ]
+}
