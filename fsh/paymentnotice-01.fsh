@@ -1,4 +1,4 @@
-Instance: PagamentoServico
+Instance: paymentnotice-01
 InstanceOf: PaymentNotice
 Usage: #example
 * status = #active

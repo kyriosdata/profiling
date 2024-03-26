@@ -1,7 +1,6 @@
-Instance: Leonarda
+Instance: binary-02
 InstanceOf: Binary
 Usage: #example
-Title: "Leonarda"
-Description: "Ilustra texto em base64"
-* contentType = #plain/text
+Title: "Leonarda na base64"
+* contentType = #text/plain
 * data = "TGVvbmFyZGE="

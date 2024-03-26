@@ -1,4 +1,4 @@
-Extension: DiaContato
+Extension: dia-contato
 Id: dia-contato
 Title: "Dia Contato"
 Description: "Dia da semana preferencial para tentativa de acesso ao contato."

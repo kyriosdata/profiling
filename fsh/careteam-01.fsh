@@ -1,4 +1,4 @@
-Instance: UnidosPelaDonaRosa
+Instance: careteam-01
 InstanceOf: CareTeam
 Usage: #example
 Title: "Unidos Pela Dona Rosa"
