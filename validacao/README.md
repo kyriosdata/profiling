@@ -1,12 +1,12 @@
 ## Validação FHIR pode...
 
-- Validar a estrutura. Os elementos fornecidos fazem parte do padrão?
-- Validar a cardinalidade. Os elementos estão fornecidos na cardinalidade correta? 
-- Validar os valores. O valor de cada elemento está compatível com o esperado?
-- Validar os _bindings_. As vinculações estão sendo observadas?
-- Validar as invariantes. As invariantes definidas pelo padrão estão sendo observadas? Por exemplo, a seguinte invariante está definida para o elemento Patient.contact: name.exists() or telecom.exists() or address.exists() or organization.exists().
-- Validar os perfis. O perfil a ser utilizado para validar uma instância é atendido?
-- Validar os questionários. As respostas de um questionário estão conforme o esperado?
+- Validar a [estrutura](estrutura-01.json). Os elementos fornecidos fazem parte do padrão?
+- Validar a [cardinalidade](cardinalidade-01.json). Os elementos estão fornecidos na cardinalidade correta? 
+- Validar os [valores](dominio-01.json). O valor de cada elemento está compatível com o esperado?
+- Validar os [bindings](binding-01.json). As vinculações estão sendo observadas?
+- Validar as [invariantes](invariante-01.json). As invariantes definidas pelo padrão estão sendo observadas? Por exemplo, a seguinte invariante está definida para o elemento Patient.contact: name.exists() or telecom.exists() or address.exists() or organization.exists().
+- Validar os [perfis](perfil-01.json). O perfil a ser utilizado para validar uma instância é atendido?
+- Validar os [questionários](questionario-01.json). As respostas de um questionário estão conforme o esperado?
 
 ## Validação FHIR não inclui...
 
