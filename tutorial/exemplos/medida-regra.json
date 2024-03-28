@@ -1,6 +1,6 @@
 {
   "resourceType": "Measure",
-  "id": "MedidaSatisfazRegra",
+  "id": "medida-regra",
   "text": {
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">fake</div>"
@@ -12,7 +12,7 @@
         {
           "criteria": {
             "language": "text/fhirpath",
-            "expression": "expressao"
+            "expression": "Patient.gender"
           }
         }
       ]

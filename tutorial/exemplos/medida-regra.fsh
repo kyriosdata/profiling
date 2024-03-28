@@ -1,4 +1,4 @@
-Instance: MedidaSatisfazRegra
+Instance: medida-regra
 InstanceOf: Measure
 Usage: #example
 
@@ -10,4 +10,4 @@ Usage: #example
 
 // Um grupo mínimo exigido
 * group.population.criteria.language = #text/fhirpath
-* group.population.criteria.expression = "expressao"
+* group.population.criteria.expression = "Patient.gender"
