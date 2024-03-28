@@ -1,11 +1,12 @@
-Instance: PacienteCodigos
+Instance: codes
 InstanceOf: Patient
 Usage: #example
 Title: "Paciente para ilustrar uso de códigos (codes)"
 Description: "Apenas ilustra uso de codes"
 
 // Observe que o elemento Patient.gender é do tipo "code"
-// Ou seja, "male" em vez de "#male", por exemplo, falha.
+// Ou seja, o código é precedido por #, por exemplo #male, 
+// em vez de male ou "male".
 * gender = #male
 
 // Em particular Patient.gender admite valores definidos
@@ -18,7 +19,7 @@ Description: "Apenas ilustra uso de codes"
 // Neste caso, indica que esta instância de Patient é substituída
 // por outra cujo identificador é 'pessoa'. 
 * link[0].type = #replaced-by
-* link[0].other = Reference(pessoa)
+* link[0].other = Reference(Patient/pessoa)
 
 // Em tempo, 'replaced-by' é um dos códigos definidos no ValueSet
 // http://hl7.org/fhir/ValueSet/link-type

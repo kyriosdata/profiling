@@ -1,12 +1,12 @@
 {
   "resourceType": "Patient",
-  "id": "PacienteCodigos",
+  "id": "codes",
   "gender": "male",
   "link": [
     {
       "type": "replaced-by",
       "other": {
-        "reference": "pessoa"
+        "reference": "Patient/pessoa"
       }
     }
   ]
