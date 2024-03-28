@@ -1,4 +1,4 @@
-Instance: Codigos
+Instance: codings
 InstanceOf: Observation
 Usage: #example
 Title: "Ilustra uso de code/Coding/CodeableConcept"
@@ -21,7 +21,15 @@ Description: "Exemplo de code/Coding/CodeableConcept"
 * code.coding.code = #"34024-0"
 
 // O código pode ser fornecido entre aspas (conforme acima)
-// Aspas obrigatórias se o código inclui espaço em branco
+// Aspas são obrigatórias se o código inclui espaço em branco
 
 * code.coding.userSelected = false
 * code.coding.version = "2.74"
+
+// Boa prática exige os itens abaixo
+// Se não fornecidos a validação indica
+// por meio de warnings (avisos)
+
+* performer = Reference(Practitioner/1)
+* subject = Reference(Patient/1)
+* effectiveDateTime = "2024"

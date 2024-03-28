@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "Codigos",
+  "id": "codings",
   "status": "registered",
   "code": {
     "text": "descreva aqui o que é observado",
@@ -12,5 +12,14 @@
         "version": "2.74"
       }
     ]
-  }
+  },
+  "performer": [
+    {
+      "reference": "Practitioner/1"
+    }
+  ],
+  "subject": {
+    "reference": "Patient/1"
+  },
+  "effectiveDateTime": "2024"
 }
