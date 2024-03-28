@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "CodigosAlternativos",
+  "id": "codings-alternativo",
   "status": "registered",
   "code": {
     "coding": [
@@ -27,5 +27,14 @@
         "system": "http://loinc.org"
       }
     ]
-  }
+  },
+  "performer": [
+    {
+      "reference": "Practitioner/1"
+    }
+  ],
+  "subject": {
+    "reference": "Patient/1"
+  },
+  "effectiveDateTime": "2024"
 }

@@ -5,7 +5,7 @@
 // Não é preciso iniciar com $, apenas "prática comum"
 Alias: $loinc = http://loinc.org
 
-Instance: CodigosAlternativos
+Instance: codings-alternativo
 InstanceOf: Observation
 Usage: #example
 Title: "Ilustra uso de code/Coding/CodeableConcept"
@@ -27,3 +27,10 @@ Description: "Exemplo de code/Coding/CodeableConcept"
 // Resultado da observação: "cárie"
 * valueCodeableConcept = $loinc#LA8948-7
 
+// Boa prática exige os itens abaixo
+// Se não fornecidos a validação indica
+// por meio de warnings (avisos)
+
+* performer = Reference(Practitioner/1)
+* subject = Reference(Patient/1)
+* effectiveDateTime = "2024"
