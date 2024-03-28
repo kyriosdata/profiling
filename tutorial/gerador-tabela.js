@@ -8,7 +8,7 @@ function linkToResource(recurso) {
 }
 
 function linkToJson(json) {
-  return "[json](exemplos/" + json + ".fsh.json)";
+  return "[json](exemplos/" + json + ".json)";
 }
 
 function linkToFsh(fsh) {
