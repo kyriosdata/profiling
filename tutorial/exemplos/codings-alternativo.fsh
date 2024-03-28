@@ -24,7 +24,7 @@ Description: "Exemplo de code/Coding/CodeableConcept"
 * category.coding = http://terminology.hl7.org/CodeSystem/observation-category#exam
 
 // Sentença abaixo ilustra (opções)
-// Resultado da observação: "cárie"
+// Valor da observação: "cárie"
 * valueCodeableConcept = $loinc#LA8948-7
 
 // Boa prática exige os itens abaixo
